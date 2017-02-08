@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_room_asset">资产信息</string>
+    <string name="hint_room_asset_child">没有备注</string>
+    <string name="label_room_asset_room_info">房间信息</string>
+    <string name="label_room_asset_asset_name">资产名称</string>
+    <string name="label_room_asset_asset_spec">型&#12288;&#12288;号</string>
+    <string name="label_room_asset_asset_brand">品&#12288;&#12288;牌</string>
+    <string name="label_room_asset_asset_number">数&#12288;&#12288;量</string>
+    <string name="label_room_asset_asset_remark">备&#12288;&#12288;注</string>
+    <string name="hint_room_asset_asset_name">没有名称</string>
+    <string name="hint_room_asset_asset_spec">没有型号</string>
+    <string name="hint_room_asset_asset_brand">没有品牌</string>
+    <string name="hint_room_asset_asset_number">没有数量</string>
+    <string name="hint_room_asset_asset_remark">没有备注</string>
+
+</resources>

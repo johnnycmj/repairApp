@@ -1,0 +1,221 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 背景 -->
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/love_common_bg" />
+    </LinearLayout>
+    <!-- 内容 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="23dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_biaobai_me" />
+
+            <EditText
+                android:id="@+id/love_you_from_name"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableBottom="@drawable/line_biaobai_bg"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxEms="6"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="#a04833"
+                android:textColorHint="#a04833"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="19dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_biaobai_too" />
+
+            <EditText
+                android:id="@+id/love_you_to_name"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableBottom="@drawable/line_biaobai_bg"
+                android:hint="@string/hint_activity_love_you_submit_to_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxEms="6"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="#a04833"
+                android:textColorHint="#a04833"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- 输入框区域 -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="99" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25.5dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="98"
+                    android:background="@drawable/biaobai_bg_top"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="166dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/biaobai_bg_bot"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="92dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="30dp"
+                android:fillViewport="true" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/love_you_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="@string/hint_activity_love_you_submit_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textMultiLine"
+                        android:textColor="#a04833"
+                        android:textColorHint="#a04833"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <!-- 输入长度 -->
+
+            <TextView
+                android:id="@+id/love_you_content_lengh_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="38dp"
+                android:layout_marginLeft="70dp"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="@string/default_length_indicator_for_love_you_content"
+                android:textColor="@color/love_you_content_indicator_normal"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="27dp"
+                android:background="@drawable/input_biaobai_bg"
+                android:orientation="vertical"
+                android:paddingLeft="90dp" >
+
+                <CheckBox
+                    android:id="@+id/love_you_rose_is_order"
+                    style="@style/spring_horse_widget_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:paddingLeft="@dimen/love_you_submit_padding_left"
+                    android:text="@string/label_checkbox_love_you_is_order"
+                    android:textColor="#f23c62"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/label_checkbox_love_you_dateline_tip"
+                    android:textColor="#a04833"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/love_you_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edittext_backgroud"
+                    android:gravity="center"
+                    android:hint="@string/hint_activity_love_you_submit_phone"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingLeft="8.5dp"
+                    android:singleLine="true"
+                    android:textColor="#a04833"
+                    android:textColorHint="#a04833"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/biaobai_bg_bot_shadow"
+                android:contentDescription="@null" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

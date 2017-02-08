@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".StudentIndexActivity" >
+
+    <ExpandableListView
+        android:id="@+id/repair_order_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:childDivider="@drawable/line"/>
+
+    <include
+        android:layout_centerInParent="true"
+        layout="@layout/common_progressbar" />
+
+</RelativeLayout>

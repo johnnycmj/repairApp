@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_complaint_submit">新建议</string>
+    <string name="hint_activity_complaint_submit_title">请填写标题</string>
+    <string name="hint_activity_complaint_submit_content">请填写建议内容</string>
+    <string name="label_activity_complaint_submit_ime_submit">建议</string>
+    <string name="label_activity_complaint_submit_name">[姓名]</string>
+     <string name="hint_activity_complaint_submit_name">没有名字</string>
+</resources>

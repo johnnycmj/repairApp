@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="gold">#FF9933</color>
+    <color name="setting_background">#fff0f3f6</color>
+    <color name="blue">#00E5EE</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="page_tab_indicator_color">#0080FF</color>
+    <color name="notice_type_urgency">#FF0000</color>
+    <color name="notice_type_normal">#212121</color>
+    <color name="notice_type_other">#4876FF</color>
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+    <color name="workbench_repair_line">#6699FF</color>
+    <color name="frame_button_text_enable">#8F5217</color>
+    
+    <color name="modular_switcher_text_enable">#8E8E8E</color>
+    <color name="modular_switcher_text_unable">#E35C49</color>
+    <color name="spring_horse_modular_switcher_text_enable">#801413</color>
+    <color name="spring_horse_modular_switcher_text_unable">#feeecd</color>
+    <color name="common_status_red">#E35C49</color>
+    <color name="modular_page_repair_switcher_not_accept_text_enable">#255985</color>
+    <color name="modular_page_repair_switcher_not_accept_text_unable">#FFFFFF</color>
+    
+    <color name="spring_horse_modular_page_repair_switcher_not_accept_text_enable">#844310</color>
+    <color name="spring_horse_modular_page_repair_switcher_not_accept_text_unable">#844310</color>
+    
+    <color name="modular_page_repair_switcher_filter_text_enable">#999999</color>
+    <color name="modular_page_repair_switcher_filter_text_unable">#363231</color>
+    
+    <color name="workbench_material_sort_text_unselected">#999999</color>
+    <color name="workbench_material_sort_text_selected">#312d2c</color>
+    
+    <color name="spring_horse_repair_order_list_empty_text_color">#aa967d</color>
+    <color name="spring_horse_repair_order_text_area_text_color">#c3c4c5</color>
+    <color name="spring_horse_common_important_level_text_color">#844310</color>
+    <color name="spring_horse_common_normal_level_text_color">#ba8e60</color>
+    
+    <color name="love_you_content_indicator_normal">#7cbf88</color>
+    <color name="love_you_content_indicator_out_of_range">#e44443</color>
+</resources>

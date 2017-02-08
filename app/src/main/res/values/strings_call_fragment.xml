@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="call_fragment_key_name">callFunctionName</string>
+    <string name="call_fragment_key_code">callCode</string>
+    <string name="call_fragment_repair_fragment_name">CALL_REPAIR_FRAGMENT</string>
+    <string name="call_fragment_complaint_fragment_name">CALL_COMPLAINT_FRAGMENT</string>
+    <string name="call_fragment_material_info_fragment_name">CALL_MATERIAL_INFO_FRAGMENT</string>
+    <string name="call_fragment_employment_repair_group_list_activity_name">CALL_MATERIAL_EMPLOYMENT_REPAIR_LIST_ACTIVITY</string>
+    <string name="call_fragment_person_info_name">CALL_PERSON_INFO_FRAGMENT</string>
+    <string name="call_fragment_notice_list_name">CALL_NOTICE_LIST_FRAGMENT</string>
+    <string name="call_fragment_office_material_apply_name">CALL_OFFICE_MATERIAL_APPLY_FRAGMENT</string>
+    <string name="call_fragment_contribute_list_fragment_name">CALL_CONTRIBUTE_FRAGMENT</string>
+    <string name="call_fragment_lost_or_found_list_fragment_name">CALL_HELP_LOST_OR_FOUND_FRAGMENT</string>
+    <string name="call_fragment_love_you_list_fragment_name">CALL_LOVE_YOU_FRAGMENT</string>
+    <string name="call_fragment_push_category_fragment_name">CALL_PUSH_CATEGORY_FRAGMENT</string>
+
+</resources>

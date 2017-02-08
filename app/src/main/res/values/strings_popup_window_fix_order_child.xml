@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_button_start_to_deal">处理</string>
+    <string name="label_button_complete">完成</string>
+    <string name="label_button_fix_order_detail">详情</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_materail_select">选择材料</string>
+    <string name="label_materail_select_submit">加入</string>
+    <string name="label_materail_select_toggle_select_all">全选</string>
+    <string name="label_materail_select_toggle_select_none">取消全选</string>
+    <string name="label_select_materail_submit_select">完成</string>
+</resources>

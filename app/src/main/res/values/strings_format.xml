@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="format_complaint_title"><xliff:g>%s</xliff:g></string>
+    <string name="format_complaint_writer"><xliff:g>%s</xliff:g></string>
+    <string name="format_complaint_receive">回复(<xliff:g>%s</xliff:g>)</string>
+    <string name="format_complaint_submit_writer_name">[姓名]&#160;&#160;&#160;&#160;<xliff:g>%s</xliff:g></string>
+    <string name="format_complaint_writer_name">[姓名]<xliff:g>%s</xliff:g></string>
+    <string name="format_complaint_detail_create_time">发表于&#160;&#160;<xliff:g>%s</xliff:g></string>
+    <string name="format_complaint_receive_title">[回复]&#160;&#160;<xliff:g>%s</xliff:g></string>
+    <string name="format_materail_grant_code">[编号]<xliff:g>%s</xliff:g></string>
+    <string name="format_quiet_time_full_show_start_time">每日<xliff:g>%1$02d</xliff:g>：00</string>
+    <string name="format_quiet_time_full_show_today_end_time"><xliff:g>%1$02d</xliff:g>：00</string>
+    <string name="format_quiet_time_full_show_tommrow_time">次日<xliff:g>%1$02d</xliff:g>：00</string>
+    <string name="format_quiet_start_time">开始时间：<xliff:g>%1$02d</xliff:g>:00</string>
+    <string name="format_quiet_continued_time">持续时间：<xliff:g>%d</xliff:g>小时</string>
+    <string name="format_version_name"><xliff:g>%s</xliff:g></string>
+    <string name="format_app_name"><xliff:g>%s</xliff:g>&#160;Android版</string>
+    <string name="format_update_new_version_info">发现新版本&#160;<xliff:g>%s</xliff:g></string>
+    <string name="format_notice_content">&#12288;&#12288;<xliff:g>%s</xliff:g></string>
+    <string name="format_photo_number_brackets">(<xliff:g>%d</xliff:g>张)</string>
+    <string name="format_notice_detail_title">公告标题：<xliff:g>%s</xliff:g></string>
+    <string name="format_notice_detail_author">发布人员：<xliff:g>%s</xliff:g></string>
+    <string name="format_notice_detail_date">公告日期：<xliff:g>%s</xliff:g></string>
+    <string name="format_notice_detail_content">公告正文：<xliff:g>%s</xliff:g></string>
+    <string name="format_repair_order_asset_and_trouble"><b><xliff:g>%s</xliff:g></b>(<xliff:g>%s</xliff:g>)</string>
+    <string name="format_repair_order_trouble">(<xliff:g>%s</xliff:g>)</string>
+    <string name="format_page_more_version">当前版本 v<xliff:g>%s</xliff:g>&#160;</string>
+    <string name="format_page_more_common_right_fix"><xliff:g>%s</xliff:g>&#160;</string>
+    <string name="format_room_asset_name">名称：<xliff:g>%s</xliff:g></string>
+    <string name="format_room_asset_spec">型号：<xliff:g>%s</xliff:g></string>
+    <string name="format_room_asset_number">数量：<xliff:g>%s</xliff:g></string>
+    <string name="format_room_asset_brand">品牌：<xliff:g>%s</xliff:g></string>
+    <string name="format_room_asset_remark">备注：<xliff:g>%s</xliff:g></string>
+    <string name="format_material_select_number_unit">×<xliff:g>%s</xliff:g>(<xliff:g>%s</xliff:g>)</string>
+    <string name="format_title_employment_repair_group"><xliff:g>%s</xliff:g>的维修单</string>
+    <string name="format_page_repair_switcher_not_accept">未受理(<xliff:g>%s</xliff:g>)</string>
+    <string name="format_page_repair_switcher_reparing">维修中(<xliff:g>%s</xliff:g>)</string>
+    <string name="format_page_repair_switcher_finish">已完成(<xliff:g>%s</xliff:g>)</string>
+    <string name="format_office_material_apply_material_list_label">申领清单(<xliff:g>%s</xliff:g>)</string>
+    <string name="format_office_material_apply_material_zero_number">您选择的<xliff:g>%s</xliff:g>数量为0</string>
+    <string name="format_office_material_apply_operation_cancel_tip">您本次共申领<xliff:g>%s</xliff:g>样物品，是否对该申领单进行撤销操作？</string>
+    <string name="format_office_material_apply_operation_query_tip">您本次共申领<xliff:g>%s</xliff:g>样物品，是否对该申领单进行确认操作？</string>
+    <string name="format_division_material_used_title"><xliff:g>%s</xliff:g>使用情况</string>
+    <string name="format_division_material_applied_title"><xliff:g>%s</xliff:g>申领情况</string>
+    <string name="format_repair_material_unit">(<xliff:g>%s</xliff:g>)</string>
+    <string name="format_repair_material_number">×<xliff:g>%s</xliff:g></string>
+    <string name="format_length_indicator_for_love_you_submit_content"><xliff:g>%s</xliff:g>/520个字符</string>
+
+</resources>

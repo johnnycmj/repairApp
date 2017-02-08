@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:layout_weight="98"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+             android:visibility="gone"
+            android:id="@+id/college_service_left_line"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="#d9b48b" />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:id="@+id/college_service_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:paddingBottom="38dp"
+            android:paddingTop="37dp"
+            android:textColor="#844310"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/college_service_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="1"
+        android:contentDescription="@null"
+        android:src="#d9b48b" />
+
+</LinearLayout>

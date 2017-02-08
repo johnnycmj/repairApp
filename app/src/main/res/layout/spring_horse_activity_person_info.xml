@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/person_user_name"
+                style="@style/spring_horse_textview_person_info_value"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:drawableLeft="@drawable/spring_horse_icon_person_info_username"
+                android:hint="@string/prompt_empty_common_value"
+                android:textColorLink="#363231" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@null"
+                android:src="#d9b48b" />
+
+            <TextView
+                android:id="@+id/person_real_name"
+                style="@style/spring_horse_textview_person_info_value"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:drawableLeft="@drawable/spring_horse_icon_person"
+                android:hint="@string/prompt_empty_common_value"
+                android:textColorLink="#363231" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@null"
+                android:src="#d9b48b" />
+
+            <LinearLayout
+                android:id="@+id/dorm_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/person_info_room_info"
+                    style="@style/spring_horse_textview_person_info_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:drawableLeft="@drawable/spring_horse_icon_person_info_place"
+                    android:hint="@string/prompt_empty_common_value" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:contentDescription="@null"
+                    android:src="#d9b48b" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/person_info_contact_change"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/person_info_contact_tel"
+                    style="@style/spring_horse_textview_person_info_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:drawableLeft="@drawable/spring_horse_icon_contact"
+                    android:hint="@string/prompt_empty_common_value"
+                    android:textColorLink="#363231" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/label_person_info_contact_change"
+                    android:textColor="#844310"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@null"
+                android:src="#d9b48b" />
+
+            <TextView
+                android:id="@+id/person_info_password_change"
+                style="@style/spring_horse_textview_person_info_value"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:drawableLeft="@drawable/spring_horse_icon_edit"
+                android:text="@string/label_person_info_password_change"
+                android:textColorLink="#844310" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@null"
+                android:src="#d9b48b" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" android:scaleType="fitXY" android:src="@drawable/labor_common_bg_normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:layout_weight="99"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/apply_material_empty"
+                layout="@layout/spring_horse_empty_apply_material" />
+
+            <ListView
+                android:listSelector="@drawable/common_list_selector"
+                android:id="@+id/pre_apply_materails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_list_item_bg"
+                android:divider="#d8d8d8"
+                android:dividerHeight="0.5dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/select_materail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginRight="47dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/spring_horse_append_material_selector"
+            android:text="@string/label_select_material"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/update_download_width"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".UpdateDownloadDialogActivity" >
+
+    <TextView 
+        android:id="@+id/update_download_title"
+        style="@style/update_download_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+        style="@style/textview_update_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/label_update_new_version_info" />
+
+    <TextView
+        android:id="@+id/version_name"
+        style="@style/textview_update_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/version_log"
+            style="@style/textview_update_log"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <TextView
+        style="@style/textview_update_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_update_download_query_update" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp" >
+
+        <ProgressBar
+            android:id="@+id/download_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/update_download"
+            style="@style/widget_button_dialog_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="30"
+            android:text="@string/label_update_download_dialog_download" />
+
+        <Button
+            android:id="@+id/update_cancel"
+            style="@style/widget_button_dialog_undownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="13dp"
+            android:layout_weight="70"
+            android:text="@string/label_update_download_dialog_cancel"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/update_close"
+            style="@style/widget_button_dialog_undownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="13dp"
+            android:layout_weight="70"
+            android:text="@string/label_update_download_dialog_close"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

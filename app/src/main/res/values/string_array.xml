@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="inner_useful_expresstions">
+        <item>您好，这个不属于我的维修范围，请帮我转发下单子吧。</item>
+        <item>您好，最近单子比较多，请您耐心等待我们上门维修。</item>
+        <item>您好，感谢您的评价，我们会继续努力做的更好。</item>
+        <item>您好，最近生病了，不能及时给您维修。</item>
+    </string-array>
+    <string-array name="permissions_modulars">
+        <item>student_repair_dorm</item><!-- 学生宿舍报修 -->
+        <item>student_repair_inner</item><!-- 学生公共室内 -->
+        <item>student_repair_outter</item><!-- 学生公共室外 -->
+        <item>complain</item><!-- 学生投诉建议 -->
+        <item>repair_repair_dorm</item><!-- 维修工宿舍报修 -->
+        <item>repair_repair_inner</item><!-- 维修工公共室内 -->
+        <item>repair_repair_outter</item><!-- 维修工公共室外 -->
+        <item>material_info</item><!-- 维修工报修材料 -->
+        <item>notice</item><!-- 通知公告 -->
+        <item>person_info</item><!-- 个人信息 -->
+        <item>feedbackus</item><!-- 意见反馈 -->
+        <item>about</item><!-- 关于梧桐 -->
+        <item>check_update</item><!-- 检查更新 -->
+        <item>repair_order_assignment</item><!-- 维修派工 -->
+    </string-array>
+    <string-array name="filter_repair_items" >
+        <item>@string/av_index_tab_label_modular_page_repair_filter_all</item>
+        <item>@string/av_index_tab_label_modular_page_repair_filter_dorm</item>
+        <item>@string/av_index_tab_label_modular_page_repair_filter_inner</item>
+        <item>@string/av_index_tab_label_modular_page_repair_filter_outter</item>
+    </string-array>
+    
+    <string-array name="repair_order_types" >
+        <item>@string/label_repair_order_type_dorm</item>
+        <item>@string/label_repair_order_type_inner</item>
+        <item>@string/label_repair_order_type_outter</item>
+    </string-array>
+    
+</resources>

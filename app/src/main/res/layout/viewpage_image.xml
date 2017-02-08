@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:id="@+id/thumb_image"
+        android:layout_width="@dimen/activity_repair_order_detail_view_page_image_width"
+        android:layout_height="@dimen/activity_repair_order_detail_view_page_image_height"
+        android:contentDescription="@null"/>
+
+
+</FrameLayout>

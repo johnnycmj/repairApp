@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tips_for_update_must_loading">正在检查必要更新信息，请稍后</string>
+    <string name="tips_for_update_must_load_data_error">检查更新失败，获取数据异常</string>
+    <string name="tips_for_empty_modulars">暂无可用模块，请联系我们反馈该问题</string>
+    <string name="tips_for_newest_version_now">您现在使用的已经是微修最近的版本了哦！</string>
+    <string name="tips_for_network_bad">您所在地的网络信号微弱，小微无法连接到服务器（＋﹏＋）</string>
+    <string name="tips_for_loading">小微正在努力加载中</string>
+    <string name="tips_for_collecting_for_submit">小微正在努力为提交做好准备</string>
+    <string name="tips_for_crash">小微与其他软件有冲突，目前无法使用了(*&gt;﹏&lt;*)~~</string>
+    <string name="tips_for_common_repair_order_empty">快去看看有什么需要维修的嘛~</string>
+    <string name="tips_for_common_repair_order_empty_repairman">暂时还没有报修单~</string>
+    <string name="tips_for_not_accept_no_more">维修部的叔叔已经在路上了，请您耐心等待下哦~</string>
+    <string name="tips_for_repairing_no_more">叔叔已经在维修咯，很快就会修好咯~</string>
+    <string name="tips_for_finish_no_more">叔叔已经敲敲打打补补好了，请同学要记得确认哦~~</string>
+    
+    <string name="tips_for_not_accept_no_more_fjmk">维修部的同事已经在路上了，请您耐心等待下哦~</string>
+    <string name="tips_for_repairing_no_more_fjmk">维修部的同事已经在维修咯，很快就会修好咯~</string>
+    <string name="tips_for_finish_no_more_fjmk">维修部的同事已经敲敲打打补补好了，请记得检查哦~~</string>
+    
+    <string name="tips_for_feedback_us_hint_contact_info">您的手机号码或电子邮件地址</string>
+    <string name="tips_for_feedback_us_hint_content">欢迎您反馈意见和问题，这将会是小微进步的动力~</string>
+    <string name="tips_for_complaint_submit_hint_content">留下您的建议小微会尽快回复。</string>
+    <string name="tips_for_memory_bad">文件读写异常（＋﹏＋）</string>
+    <string name="tips_for_unknown_error">程序遇到未知错误，如果该提示反复提醒，请联系我们解决（＋﹏＋）</string>
+
+</resources>

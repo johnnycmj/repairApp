@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="8dp" >
+
+    <TextView
+        android:id="@+id/office_material_material_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:singleLine="true"
+        android:textColor="#E35C49"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" >
+
+        <TextView
+            style="@style/textview_workbench_material_stat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="@string/material_list_brand_label" />
+
+        <TextView
+            android:id="@+id/office_material_brand"
+            style="@style/textview_workbench_material_stat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/material_page_specification_label"
+            style="@style/textview_workbench_material_stat_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="98"
+            android:gravity="right"
+            android:text="@string/material_list_spec_to_code_index_label" />
+
+        <TextView
+            android:id="@+id/office_material_spec"
+            style="@style/textview_workbench_material_stat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:gravity="right"
+            android:minWidth="54dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" >
+
+        <TextView
+            style="@style/textview_workbench_material_stat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="@string/material_list_apply_number_label" />
+
+        <TextView
+            android:id="@+id/office_material_apply_number"
+            style="@style/textview_workbench_material_stat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/office_material_stock_out_number_label"
+            style="@style/textview_workbench_material_stat_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="98"
+            android:gravity="right"
+            android:text="@string/material_list_stock_out_number_label" />
+
+        <TextView
+            android:id="@+id/office_material_stock_out_number"
+            style="@style/textview_workbench_material_stat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:gravity="right"
+            android:minWidth="54dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

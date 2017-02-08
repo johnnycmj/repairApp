@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/repair_order_detail_background_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grid_repair_order_bg_one"
+    android:orientation="vertical" >
+
+    <!-- 报修单内容开始 -->
+
+    <TextView
+        android:id="@+id/repair_detail_asset_and_trouble"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:paddingLeft="24dp"
+        android:textColor="#e35c49"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp" >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_repair_order_dorm" />
+
+        <TextView
+            android:id="@+id/repair_detail_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_empty_common_value"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp" >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_repair_order_order" />
+
+        <TextView
+            android:id="@+id/repair_detail_repair_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_empty_common_value"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:contentDescription="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="#31B9AC" />
+
+    <LinearLayout
+        android:id="@+id/repair_detail_contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/repair_detail_contact_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_student" />
+
+        <TextView
+            android:id="@+id/repair_detail_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_empty_common_value"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/repair_detail_contact_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_empty_common_value"
+            android:paddingLeft="8dp"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/repair_detail_contact_call_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="right" >
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@null"
+                android:src="#d8d8d8" />
+
+            <ImageView
+                android:id="@+id/repair_detail_contact_call"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_repair_order_contact" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/repair_detail_contact_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="#d8d8d8"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp" >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/notice_icon_time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:text="@string/label_fix_info_start_time"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/repair_detail_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_empty_common_value"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="48dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:text="@string/label_fix_info_accept_time"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/repair_detail_accept_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_empty_common_value"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="48dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:text="@string/label_fix_info_end_time"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/repair_detail_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_empty_common_value"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/upload_photo_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="7.5dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="#d8d8d8" />
+
+    <LinearLayout
+        android:id="@+id/repair_detail_feedback_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:id="@+id/repair_detail_feedback_count"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/icon_complaint_receive_number"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/common_number_zero"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:text="@string/label_fix_info_feedback_count"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/room_asset_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginTop="7.5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/repair_detail_room_asset_info"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/icon_complaint_receive_number"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/common_number_zero"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:text="@string/label_fix_info_room_asset_info"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/material_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginTop="7.5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="24dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/repair_detail_material_info"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/icon_complaint_receive_number"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/common_number_zero"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:text="@string/label_fix_info_material_info"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="#d8d8d8" />
+
+    <!-- 图片和备注 -->
+
+    <LinearLayout
+        android:id="@+id/repair_detail_remark_img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="7.5dp"
+        android:background="#F3F4F3"
+        android:orientation="horizontal"
+        android:padding="6dp" >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="top"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_left_quotes" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="99"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/fix_info_other_trouble_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_empty_remark"
+                android:lineSpacingExtra="8dp"
+                android:paddingBottom="9dp"
+                android:paddingTop="9dp"
+                android:textColor="#696969"
+                android:textSize="14sp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_repair_order_image"
+                android:layout_width="@dimen/activity_repair_order_detail_view_page_image_width"
+                android:layout_height="@dimen/activity_repair_order_detail_view_page_image_height"
+                android:layout_gravity="center_horizontal"
+                android:minHeight="150dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_right_quotes" />
+    </LinearLayout>
+    <!-- 报修单内容结束 -->
+
+</LinearLayout>

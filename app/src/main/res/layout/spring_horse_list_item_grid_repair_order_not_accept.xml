@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/grid_repair_order_width"
+        android:layout_height="@dimen/grid_repair_order_height"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/repair_order_item_asset_and_trouble"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="99"
+            android:ellipsize="middle"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textColor="#e35c49"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/repair_order_start_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="@string/av_index_tab_label_modular_page_repair_grid_item_place"
+                android:textColor="#844310"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/repair_order_item_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="9dp"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/av_index_tab_label_modular_page_repair_grid_item_start_time"
+                    android:textColor="#844310"
+                    android:layout_weight="99"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/repair_order_item_feedback_number"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/icon_complaint_receive_number"
+                    android:ellipsize="none"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="9dp" >
+
+                <TextView
+                    android:id="@+id/repair_order_item_start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="99"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/repair_order_item_has_photo"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@null"
+                    android:src="@drawable/repair_order_item_img" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

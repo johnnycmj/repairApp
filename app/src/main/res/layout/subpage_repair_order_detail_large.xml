@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/repair_order_detail_background_layout"
+    android:orientation="vertical" >
+
+    <!-- 报修单内容开始 -->
+
+    <TextView
+        android:id="@+id/repair_detail_asset_and_trouble"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp" 
+        android:textColor="#e35c49"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:contentDescription="@null"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="#31B9AC" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="@string/av_index_tab_label_modular_page_repair_grid_item_place"
+            android:textColor="#999999"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/repair_detail_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:hint="@string/prompt_empty_common_value"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="#d8d8d8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="99"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.5dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:text="@string/av_index_tab_label_modular_page_repair_grid_item_applicant_name"
+                    android:textColor="#999999"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/repair_detail_contact_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:hint="@string/prompt_empty_common_value"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="7.5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:text="@string/av_index_tab_label_modular_page_repair_grid_item_applicant_name"
+                    android:textColor="#999999"
+                    android:textSize="22sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/repair_detail_contact_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:hint="@string/prompt_empty_common_value"
+                    android:textColor="#999999"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="#d8d8d8" />
+
+        <ImageView
+            android:id="@+id/repair_detail_contact_call"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_repair_order_contact_large" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="#d8d8d8" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="22dp" 
+        android:paddingRight="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="@string/av_index_tab_label_modular_page_repair_grid_item_repair_order"
+            android:textColor="#999999"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/repair_detail_repair_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:hint="@string/prompt_empty_common_value"
+            android:textColor="#999999"
+            android:textSize="15.5sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="#d8d8d8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_fix_info_start_time"
+            android:textColor="#999999"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/repair_detail_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:hint="@string/prompt_empty_common_value"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:visibility="gone" >
+
+        <!-- 默认隐藏 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_fix_info_accept_time"
+            android:textColor="#999999"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/repair_detail_accept_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:hint="@string/prompt_empty_common_value"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:visibility="gone" >
+
+        <!-- 默认隐藏 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_fix_info_end_time"
+            android:textColor="#999999"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/repair_detail_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:hint="@string/prompt_empty_common_value"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="#d8d8d8" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="#d8d8d8" />
+
+    <LinearLayout
+        android:id="@+id/repair_detail_feedback_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#F3F4F3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="99"
+            android:text="@string/label_fix_info_feedback_count"
+            android:textColor="#696969"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/repair_detail_feedback_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/common_number_zero"
+            android:textColor="#999999"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="#d8d8d8" />
+
+    <LinearLayout
+        android:id="@+id/room_asset_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="#F3F4F3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="99"
+                android:text="@string/label_fix_info_room_asset_info"
+                android:textColor="#696969"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/repair_detail_room_asset_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/common_number_zero"
+                android:textColor="#999999"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="#d8d8d8" />
+
+    <LinearLayout
+        android:id="@+id/material_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="#F3F4F3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="99"
+                android:text="@string/label_fix_info_material_info"
+                android:textColor="#696969"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/repair_detail_material_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/common_number_zero"
+                android:textColor="#999999"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="#d8d8d8" />
+
+    <!-- 图片和备注 -->
+
+    <LinearLayout
+        android:id="@+id/repair_detail_remark_img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:background="#F3F4F3"
+        android:orientation="horizontal"
+        android:padding="6dp" >
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="top"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_left_quotes_large_red" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="99"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/fix_info_other_trouble_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_empty_remark"
+                android:lineSpacingExtra="8dp"
+                android:paddingBottom="9dp"
+                android:paddingTop="9dp"
+                android:textColor="#696969"
+                android:textSize="23sp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_repair_order_image"
+                android:layout_width="@dimen/activity_repair_order_detail_view_page_image_width"
+                android:layout_height="@dimen/activity_repair_order_detail_view_page_image_height"
+                android:layout_gravity="center_horizontal"
+                android:minHeight="150dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_right_quotes_large_red" />
+    </LinearLayout>
+    
+    <include layout="@layout/footer_common_scroll_no_more"/>
+    <!-- 报修单内容结束 -->
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_repair_order">报修单</string>
+    <string name="label_dorm_name">宿舍信息</string>
+    <string name="label_tel">联系方式</string>
+    <string name="label_assets_name">报修类型</string>
+    <string name="label_repair_order_type">请选择报修类型</string>
+    <string name="label_repair_order_type_dorm">公寓宿舍</string>
+    <string name="label_repair_order_type_inner">公共室内</string>
+    <string name="label_repair_order_type_outter">公共室外</string>
+    <string name="prompt_assets_value">请选择一项</string>
+    <string name="label_trouble_name">报修项目</string>
+    <string name="prompt_trouble_value">请选择出现的问题</string>
+    <string name="label_other_trouble_name">备注信息</string>
+    <string name="prompt_other_trouble_value">请尽量详细地描述问题</string>
+    <string name="label_repair_submit">提交</string>
+    <string name="label_repair_take_photos">拍照</string>
+    <string name="label_empty">没有信息</string>
+    <string name="label_trouble_exist_info">近期有类似的报修单未完成，是否继续申请！</string>
+    <string name="label_building">报修楼房</string>
+    <string name="label_room">报修房间</string>
+    <string name="label_landmark">标志建筑</string>
+    <string name="label_street">报修街道</string>
+    <string name="label_spinner_prompt_asset">报修类型</string>
+    <string name="label_spinner_prompt_trouble">报修项目</string>
+    <string name="label_spinner_prompt_building">报修建筑</string>
+    <string name="label_spinner_prompt_room">报修房间</string>
+    <string name="label_spinner_prompt_landmark">报修标志建筑</string>
+    <string name="label_spinner_prompt_street">报修街道</string>
+
+</resources>

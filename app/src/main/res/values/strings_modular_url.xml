@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="modular_url_applicant_repair_all">applicant_repair_all</string>
+    <string name="modular_url_notice">notice</string>
+    <string name="modular_url_person_info">person_info</string>
+    <string name="modular_url_complain">complain</string>
+    <string name="modular_url_feedbackus">feedbackus</string>
+    <string name="modular_url_about">about</string>
+    <string name="modular_url_repair_repair_all">repairman_repair_all</string>
+    <string name="modular_url_repair_repair_all_big">repairman_repair_all_big</string>
+    <string name="modular_url_material_info">material_info</string>
+    <string name="modular_url_workbench">workbench</string>
+    <string name="modular_url_office_material_apply">material_apply</string>
+    <string name="modular_url_office_material_apply_statistic">apply_statistic</string>
+    <string name="modular_url_fast_message_setting">fast_message_setting</string>
+    <string name="modular_url_not_disturb_setting">not_disturb_setting</string>
+    <string name="modular_url_more">inner_more</string>
+    <string name="fragment_label_change_password">fragment_label_change_password</string>
+    <string name="fragment_label_change_contact">fragment_label_change_contact</string>
+    <string name="modular_url_hom_page">index_message</string>
+    <string name="modular_url_micro_share">share</string>
+    <string name="modular_url_room_meter">house_meter</string>
+    <string name="modular_url_office_meter">work_meter</string>
+    <string name="fragment_url_contribute_list">contribute_list</string>
+    <string name="modular_url_help_found_list">help_found</string>
+    <string name="modular_url_help_lost">help_lost</string>
+    <string name="modular_url_my_publish_lost_or_found">my_publish_lost_or_found</string>
+    <string name="modular_url_repairman_like">repairman_like</string>
+    <string name="modular_url_micro_activity">micro_activity</string>
+    <string name="fragment_label_micro_activity_list">fragment_label_micro_activity_list</string>
+    <string name="fragment_label_push_category_list">fragment_label_push_category_list</string>
+    <string name="fragment_label_push_message_list">fragment_label_push_message_list</string>
+    <string name="modular_url_meter_change">meter_change</string>
+    <string name="modular_url_service">collection_service</string>
+    <string name="modular_url_dorm_change">dorm_change</string>
+    <string name="fragment_url_dorm_change_apply">dorm_change_apply</string>
+
+</resources>

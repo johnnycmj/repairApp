@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <!-- 报修人报修的权限 -->
+    <string name="roles_permissions_applicant_repair">applicant_repairable</string>
+    <!-- 拥有快捷回复 -->
+    <string name="roles_permissions_fast_expresstion">has_fast_expresstion</string>
+    
+    
+    <!-- 维修工头派发的权限 -->
+    <string name="roles_permissions_repairman_header_assignment">repairman_header_assignment</string>
+    <!-- 报修人报修单确认验收的权限 -->
+    <string name="roles_permissions_applicant_query_and_check">applicant_query_and_check</string>
+    <!-- 报修人报修单申请返修的权限 -->
+    <string name="roles_permissions_applicant_apply_refix">applicant_apply_refix</string>
+    <!-- 维修工受理报修单的权限 -->
+    <string name="roles_permissions_repairman_accept_order">repairman_accept_order</string>
+    <!-- 维修工转发大额度报修单的权限 -->
+    <string name="roles_permissions_repairman_forward_order">repairman_forward_order</string>
+    <!-- 维修工完成报修单的权限 -->
+    <string name="roles_permissions_repairman_finish_order">repairman_finish_order</string>
+    <!-- 维修工完成返修的报修单的权限 -->
+    <string name="roles_permissions_repairman_refix_finish_order">repairman_refix_finish_order</string>
+   
+    <!-- 给报修单派发维修工的权限 -->
+    <string name="roles_permissions_manager_assignment_order">manager_assignment_order</string>
+    <!-- 报修单催促维修工处理的权限 -->
+    <string name="roles_permissions_manager_remind_repairman">manager_remind_repairman</string>
+    <!-- 报修人可报修所有类型 -->
+    <string name="roles_permissions_function_applicant_repair_all">function_applicant_repair_all</string>
+    <!-- 维修工可维修所有类型 -->
+    <string name="roles_permissions_function_repairman_repair_all">function_repairman_repair_all</string>
+    <!-- 维修工可查看报修材料 -->
+    <string name="roles_permissions_modular_repairman_material_info">modular_repairman_material_info</string>
+    <!-- 管理员可查看工作台 -->
+    <string name="roles_permissions_modular_manager_workbench">modular_manager_workbench</string>
+
+    <!-- 没有号码就不能使用的权限 -->
+    <string name="roles_permissions_no_phone_no_access">no_phone_no_access</string>
+    <!-- 维修工拥有回复如何维修的权限 -->
+    <string name="roles_permissions_has_how_repair_receive">has_how_repair_receive</string>
+    
+    <!-- 建议详细中查看建议人所在宿舍和维修人信息的权限 -->
+    <string name="roles_permissions_has_see_dormitory_info_of_complaint_detail">complaint_student_dormitory_info</string>
+    
+    <!-- 拥有维修工赞的权限 -->
+    <string name="roles_permissions_has_repairman_like">repairman_like</string>
+    
+    <!-- 报修人快速报修单确认验收和申请返修的权限 -->
+    <string name="roles_permissions_fast_applicant_query_and_checkand_refix">fast_applicant_query_and_check_and_refix</string>
+</resources>

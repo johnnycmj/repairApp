@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_voice">notification_voice</string>
+    <string name="notification_vibrate">notification_vibrate</string>
+    <string name="is_cache_dir_external_storage">is_cache_dir_external_storage</string>
+</resources>

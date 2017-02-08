@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="workbench_tab_switcher_simple_stat">维修</string>
+    <string name="workbench_tab_switcher_material">材料</string>
+    <string name="workbench_tab_switcher_employment">人员</string>
+    <string name="workbench_tab_switcher_division">科室</string>
+    <string name="workbench_repair_page_stat_total_label">报修</string>
+    <string name="workbench_repair_page_stat_overtime_total_label">数量</string>
+    <string name="workbench_repair_page_stat_dealt_label">处理</string>
+    <string name="workbench_repair_page_stat_complete_label">完成</string>
+    <string name="workbench_repair_page_stat_not_accept_label">未受理</string>
+    <string name="workbench_repair_page_stat_repairing_label">维修中</string>
+    <string name="workbench_repair_page_stat_total_number_label">总单数</string>
+    <string name="workbench_repair_page_stat_today_label">今天</string>
+    <string name="workbench_repair_page_stat_today_overtime_label">超过48小时</string>
+    <string name="workbench_repair_page_stat_current_week_label">本周</string>
+    <string name="workbench_repair_page_stat_current_year_label">本年</string>
+    <string name="workbench_material_page_stat_searchbox_hint">请输入材料名称</string>
+    <string name="office_material_fjcc_page_stat_searchbox_hint">请输入用品名称</string>
+    <string name="office_material_fjmk_page_stat_searchbox_hint">请输入用品名称或编号</string>
+    <string name="office_material_page_stat_searchbox_hint">请输入材料名称或编号</string>
+    <string name="workbench_material_page_stat_month_used_number_label">月使用量:</string>
+    <string name="workbench_material_page_stat_store_number_label">总库存量:</string>
+    <string name="office_material_page_sort_store_number_label">库存量:</string>
+    <string name="workbench_material_page_stat_vertical_line_label">|</string>
+    <string name="workbench_employment_page_stat_not_accept_label">未受理:</string>
+    <string name="workbench_employment_page_stat_repairing_label">维修中:</string>
+    <string name="workbench_employment_page_stat_month_total_label">月维修:</string>
+    <string name="workbench_material_page_sort_used_number_label">使用量</string>
+    <string name="workbench_material_page_sort_store_number_label">库存量</string>
+    <string name="workbench_material_page_stat_brand_label">品牌:</string>
+    <string name="workbench_material_page_stat_spec_label">型号:</string>
+    <string name="workbench_material_page_stat_spec_to_code_index_label">编号:</string>
+    <string name="statistic_material_page_stat_month_aooly_number_label">月申领量:</string>
+
+</resources>

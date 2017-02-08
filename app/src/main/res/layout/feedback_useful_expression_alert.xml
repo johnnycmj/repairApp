@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:listSelector="@drawable/common_list_selector"
+        android:id="@+id/feedback_useful_expression_listview"
+        android:layout_width="fill_parent"
+        android:divider="@drawable/divider_d8d8d8"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

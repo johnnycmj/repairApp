@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_repair_type_list_pager">报修类型查看</string>
+    <string name="title_activity_repair_type_list_pager_dorm">宿舍报修</string>
+    <string name="title_activity_repair_type_list_pager_public_inner">公共室内报修</string>
+    <string name="title_activity_repair_type_list_pager_public_outter">公共室外报修</string>
+</resources>

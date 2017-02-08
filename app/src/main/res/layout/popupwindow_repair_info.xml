@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    android:background="@drawable/more_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <Button
+        android:id="@+id/repair_info_check_and_accept"
+        style="@style/more_button"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:text="@string/label_repair_info_check_and_accept"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/repair_info_apply_refix"
+        style="@style/more_button"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:text="@string/label_repair_info_refix_check_and_accept"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wutong.repairfjnu">
+
+    <permission
+        android:name="com.wutong.repairfjnu.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- 系统震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 开机启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 防止休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 使用录音功能权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.wutong.repairfjnu.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 百度统计必须申明的权限 -->
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 百度统计可选的权限 -->
+    <!-- 百度统计使用GPS获取用户精确定位信息 -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission> -->
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.wutong.repair.RepairApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="@string/baidu_stat_app_key" />
+        <!-- abcd1234 -->
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="@string/baidu_stat_app_channel" />
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="1" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="false" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="false" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="false" />
+
+        <activity
+            android:name="com.wutong.repair.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.RepairOrderActivity"
+            android:exported="false"
+            android:label="@string/title_activity_repair_order"
+            android:parentActivityName="com.wutong.repair.activity.IndexActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="com.wutong.repair.action.modular.repairorder" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wutong.repair.activity.IndexActivity" />
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.MaterailSelectActivity"
+            android:label="@string/title_activity_materail_select"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.FullExitActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver
+            android:name="com.wutong.repair.receiver.RepairReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <category android:name="com.wutong.repairfjnu" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.wutong.repair.receiver.bootcompletedbroadcast" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE" />
+                <action android:name="android.net.nsd.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.wutong.repair.activity.RoomAssetActivity"
+            android:label="@string/title_activity_room_asset"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.QueryMaterialsActivity"
+            android:label="@string/title_activity_query_materials"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.ComplaintSubmitActivity"
+            android:label="@string/title_activity_complaint_submit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.ComplaintDetailActivity"
+            android:label="@string/title_activity_complaint_detail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.wutong.repairfjnu" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.wutong.repairfjnu" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="@string/jpush_app_key" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+        <activity
+            android:name="com.wutong.repair.activity.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.wutong.repair.action.modular.about" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.FeedbackUsActivity"
+            android:label="@string/title_activity_feekback_us"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="com.wutong.repair.action.modular.feedbackus" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.NotDisturbSettingActivity"
+            android:label="@string/title_activity_not_disturb_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver
+            android:name="com.wutong.repair.receiver.CheckUpdateReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.wutong.repair.receiver.checkupdatecheck" />
+                <action android:name="com.wutong.repair.receiver.checkupdateupdate" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.wutong.repair.activity.UpdateDownloadDialogActivity"
+            android:label="@string/title_activity_update_download_dialog"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/update_download_theme" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.NoticeDetailActivity"
+            android:label="@string/title_activity_notice_deial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.PhotoImageShowActivity"
+            android:label="@string/title_activity_photo_image_show"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.RepairOrderDetailActivity"
+            android:label="@string/title_activity_repair_order_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.RepairOrderDetailLargeActivity"
+            android:label="@string/title_activity_repair_order_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.EmploymentRepairGroupListActivity"
+            android:label="@string/title_activity_employment_repair_group_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.IndexModularActivity"
+            android:label="@string/title_activity_index_modular"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.ExtraModularActivity"
+            android:label="@string/title_activity_extra_modular"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.EditInfoActivity"
+            android:label="@string/title_activity_edit_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.QueryRedoActivity"
+            android:label="@string/title_activity_query_redo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.QueryCheckDoneActivity"
+            android:label="@string/title_activity_query_check_done"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.HowRepairActivity"
+            android:label="@string/title_activity_how_repair"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.OfficeMaterialApplyAddActivity"
+            android:label="@string/title_activity_office_material_apply_add"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.OfficeMaterialApplyDetailActivity"
+            android:label="@string/title_activity_office_material_apply_detail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.OfficeMaterialApplyMaterialListActivity"
+            android:label="@string/title_activity_office_material_apply_material_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.OfficeMaterialSelectListActivity"
+            android:label="@string/title_activity_office_material_select_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.DivisionMaterialUseStatisticActivity"
+            android:label="@string/title_activity_division_material_use_statistic" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.DivisionMaterialApplyActivity"
+            android:label="@string/title_activity_division_material_apply" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.OfficeMaterialDivisionStatisticActivity"
+            android:label="@string/title_activity_office_material_division_statistic" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.RepairMaterialDivisionStatisticActivity"
+            android:label="@string/title_activity_repair_material_division_statistic" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.RepairMaterialUsedInfoActivity"
+            android:label="@string/title_activity_repair_material_used_info" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.AddRepairMaterialActivity"
+            android:label="@string/title_activity_add_repair_material" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.RecoveryRepairMaterialActivity"
+            android:label="@string/title_activity_recovery_repair_material" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.SelectRepairMaterialActivity"
+            android:label="@string/title_activity_select_repair_material" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.IntroductionGuideActivity"
+            android:label="@string/title_activity_introduction_guide"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.EmploymentMaterialUseStatisticActivity"
+            android:label="@string/title_activity_employment_material_use_statistic" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.OfficeMaterialEmploymentStatisticActivity"
+            android:label="@string/title_activity_office_material_employment_statistic" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.ContributeDetailActivity"
+            android:label="@string/title_activity_contribute_deial"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.ContributeReceiveActivity"
+            android:label="@string/title_activity_contribute_receive"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.ContributeSubmitActivity"
+            android:label="@string/title_activity_contribute_submit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.HelpFoundSubmitActivity"
+            android:label="@string/title_activity_contribute_submit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.HelpFoundDetailActivity"
+            android:label="@string/title_activity_contribute_submit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.HelpLostSubmitActivity"
+            android:label="@string/title_activity_contribute_submit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.HelpLostDetailActivity"
+            android:label="@string/title_activity_contribute_submit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.HelpLostSubmitSuccessActivity"
+            android:label="@string/title_activity_help_lost_submit_success" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.HelpLostNoLikeActivity"
+            android:label="@string/title_activity_help_lost_no_like" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.LikeableFoundActivity"
+            android:label="@string/title_activity_likeable_found" >
+        </activity>
+
+        <activity
+            android:name="com.wutong.repair.activity.LoveYouSubmitActivity"
+            android:label="@string/title_activity_contribute_submit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.PushMessageListActivity"
+            android:label="@string/title_activity_contribute_submit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.wutong.repair.activity.MeterChangeRecordDetailActivity"
+            android:label="@string/title_activity_contribute_submit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

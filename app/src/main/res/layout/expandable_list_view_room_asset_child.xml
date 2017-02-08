@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/room_asset_with_remained"
+        style="@style/textview_room_asset_child"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/icon_other"
+        android:hint="@string/hint_room_asset_child"
+        android:gravity="left" />
+
+</LinearLayout>

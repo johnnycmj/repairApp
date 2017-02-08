@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_about_company_info_padding_bottom">80dp</dimen>
+    <dimen name="activity_login_margin_top">20dp</dimen>
+    <dimen name="thumb_image_max_size">60dp</dimen>
+    <dimen name="activity_login_clean_height">21dp</dimen>
+    <dimen name="activity_login_app_name_padding_top">94dp</dimen>
+    <dimen name="activity_login_app_name_padding_bottom">72.5dp</dimen>
+    <dimen name="activity_login_check_layout_margin_top">55dp</dimen>
+    <dimen name="common_titlebar_height">48dp</dimen>
+    <dimen name="common_titlebar_height_offset">44dp</dimen>
+    <dimen name="activity_repair_order_detail_view_page_image_width">240dp</dimen>
+    <dimen name="activity_repair_order_detail_view_page_image_height">180dp</dimen>
+    <dimen name="activity_about_upper_body_height">268dp</dimen>
+    <dimen name="grid_repair_order_height">160dp</dimen>
+    <dimen name="grid_repair_order_width">140dp</dimen>
+    <dimen name="grid_repair_order_height_large">164dp</dimen>
+    <dimen name="grid_repair_order_width_large">281dp</dimen>
+    <dimen name="grid_repair_order_left_side_width">88dp</dimen>
+    <dimen name="grid_repair_order_right_side_width">52dp</dimen>
+    <dimen name="grid_repair_order_left_side_width_large">200dp</dimen>
+    <dimen name="grid_repair_order_right_side_width_large">81dp</dimen>
+    <dimen name="feedback_void_max_lenght">240dp</dimen>
+    <dimen name="feedback_void_min_lenght">60dp</dimen>
+    <dimen name="update_download_width">300dp</dimen>
+    <dimen name="repair_material_minus_and_plus_margin_width">0dp</dimen>
+    <dimen name="repair_material_left_and_right_margin_width">4dp</dimen>
+
+    <!-- 鞭炮102x180 51dpx90dp -->
+
+    <dimen name="spring_horse_common_bg_part_fireworks_left">9dp</dimen>
+    <dimen name="spring_horse_common_bg_part_fireworks_right">300dp</dimen>
+    <dimen name="spring_horse_common_bg_part_fireworks_top">45dp</dimen>
+    <dimen name="spring_horse_common_bg_part_fireworks_bottom">505dp</dimen>
+
+    <!-- 中国结121x201 60.5dpx100.5dp -->
+
+    <dimen name="spring_horse_common_bg_part_knot_left">93.5dp</dimen>
+    <dimen name="spring_horse_common_bg_part_knot_right">206dp</dimen>
+    <dimen name="spring_horse_common_bg_part_knot_top">45dp</dimen>
+    <dimen name="spring_horse_common_bg_part_knot_bottom">494.5dp</dimen>
+    <!-- 鱼 91x208 45.5dpx104dp -->
+    <dimen name="spring_horse_common_bg_part_fish_left">205.5dp</dimen>
+    <dimen name="spring_horse_common_bg_part_fish_right">109dp</dimen>
+    <dimen name="spring_horse_common_bg_part_fish_top">45dp</dimen>
+    <dimen name="spring_horse_common_bg_part_fish_bottom">491dp</dimen>
+
+    <!-- 灯笼127x177 63.5dpx88.5dp -->
+    <dimen name="spring_horse_common_bg_part_lantern_left">276.5dp</dimen>
+    <dimen name="spring_horse_common_bg_part_lantern_right">20dp</dimen>
+    <dimen name="spring_horse_common_bg_part_lantern_top">45dp</dimen>
+    <dimen name="spring_horse_common_bg_part_lantern_bottom">506.5dp</dimen>
+    <!-- 马 304x153 152dpx76.5dp -->
+
+    <dimen name="spring_horse_common_bg_part_horse_words_left">18dp</dimen>
+    <!-- right 360dp-18dp-152dp -->
+    <dimen name="spring_horse_common_bg_part_horse_words_right">190dp</dimen>
+    <!-- top 640dp-76.5dp-75dp -->
+    <dimen name="spring_horse_common_bg_part_horse_words_top">488.5dp</dimen>
+    <dimen name="spring_horse_common_bg_part_horse_words_bottom">75dp</dimen>
+    <dimen name="spring_horse_tips_for_micro_share_right">950dp</dimen>
+    <dimen name="spring_horse_tips_for_more_right">15dp</dimen>
+    <dimen name="common_normal_alert_dialog">280dp</dimen>
+    <dimen name="not_disturb_setting_checkbox_padding_left">38dp</dimen>
+    <dimen name="fragment_date_time_year">80dp</dimen>
+    <dimen name="fragment_date_time_month">60dp</dimen>
+    <dimen name="fragment_date_time_day">60dp</dimen>
+    <dimen name="fragment_date_time_hour">60dp</dimen>
+    <dimen name="fragment_date_time_minute">60dp</dimen>
+    <dimen name="help_lost_submit_success_tip_margin_left_and_right">35dp</dimen>
+    <dimen name="help_lost_no_like_tip_margin_left_and_right">30dp</dimen>
+    <dimen name="help_lost_found_detail_call_area_width">109dp</dimen>
+    <dimen name="help_lost_found_list_width">105dp</dimen>
+    <dimen name="help_lost_found_list_remark_height">55dp</dimen>
+    <dimen name="date_time_wheel_view_item_text_size">16dp</dimen>
+    
+    <dimen name="love_you_submit_padding_left">42dp</dimen>
+
+</resources>

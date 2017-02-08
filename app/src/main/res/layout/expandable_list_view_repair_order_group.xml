@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/repair_order_group_name"
+        style="@style/textview_repair_order_group"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:drawableLeft="@drawable/icon_room_asset"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:id="@+id/repair_order_group_children_count"
+        style="@style/textview_repair_order_group_children_count"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" />
+
+</RelativeLayout>

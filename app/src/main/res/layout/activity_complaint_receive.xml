@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    android:orientation="vertical"
+    tools:context=".ComplaintReceiveActivity" >
+
+    <TextView
+        android:id="@+id/complaint_receive_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:singleLine="true"
+        android:textColor="#797979"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/complaint_receive_writer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:textColor="#797979"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/complaint_receive_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="top"
+        android:singleLine="true"
+        android:hint="@string/hint_activity_complaint_receive_content" />
+
+    <Button
+        android:id="@+id/complaint_submit"
+        style="@style/widget_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:text="@string/label_activity_complaint_receive_submit" />
+
+</LinearLayout>

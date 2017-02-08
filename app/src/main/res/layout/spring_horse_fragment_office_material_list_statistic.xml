@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="6dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="99"
+            android:background="@drawable/edittext_backgroud"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/material_page_search_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="99"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/office_material_page_stat_searchbox_hint"
+                android:imeActionLabel="搜索"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/material_page_search_clean"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_delete" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/material_page_search_submit"
+            android:layout_width="55.5dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/search_selector" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:src="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/material_page_used_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/workbench_material_sort_bg_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/material_page_used_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/workbench_material_page_sort_used_number_label"
+                android:textColor="@color/workbench_material_sort_text_color_selector"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/material_page_used_number_toggle"
+                style="@style/widget_checkbox_sort"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:checked="false" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="8.5dp"
+            android:layout_marginBottom="8.5dp"
+            android:layout_width="0.5dp"
+            android:layout_height="28dp"
+            android:contentDescription="@null"
+            android:src="#e4e4e4" />
+
+        <LinearLayout
+            android:id="@+id/material_page_store_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/workbench_material_sort_bg_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/material_page_store_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/workbench_material_page_sort_store_number_label"
+                android:textColor="@color/workbench_material_sort_text_color_selector"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/material_page_store_number_toggle"
+                style="@style/widget_checkbox_sort"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:checked="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:contentDescription="@null"
+        android:src="#cccccc" />
+
+    <com.wutong.common.widget.PullToRefreshView
+        android:id="@+id/workbench_material_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/workbench_material_empty"
+            layout="@layout/empty_workbench_material" />
+
+        <ListView
+            android:listSelector="@drawable/common_list_selector"
+            android:id="@+id/material_page_material_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/info_list_item_bg"
+            android:divider="@drawable/workbench_material_list_divider"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" />
+    </com.wutong.common.widget.PullToRefreshView>
+
+</LinearLayout>

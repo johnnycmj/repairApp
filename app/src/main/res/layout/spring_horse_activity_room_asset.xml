@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" android:scaleType="fitXY" android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <include layout="@layout/header_room_asset" />
+
+        <include
+            android:id="@+id/room_asset_empty"
+            layout="@layout/spring_horse_empty_room_asset" />
+
+        <ListView
+            android:listSelector="@drawable/common_list_selector"
+            android:id="@+id/room_assets_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/info_list_item_bg"
+            android:divider="@drawable/room_asset_list_divider"
+            android:dividerHeight="1dp"
+            android:headerDividersEnabled="false" />
+    </LinearLayout>
+
+</FrameLayout>

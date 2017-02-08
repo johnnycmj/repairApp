@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_person_info">个人信息</string>
+    <string name="label_person_info_real_name">真实姓名</string>
+    <string name="label_person_info_user_name">用户帐号</string>
+    <string name="label_person_info_dorm_info">宿舍信息</string>
+    <string name="label_person_info_contact_tel">联系电话</string>
+    <string name="hint_person_info_password_old">请输入旧密码</string>
+    <string name="hint_person_info_password_new">请输入6&#8211;18位字母数字组合</string>
+    <string name="hint_person_info_password_confirm">请再次输入新密码</string>
+    <string name="warn_person_info_password_request">密码不能为空</string>
+    <string name="warn_person_info_password_invalid">请输入6&#8211;18位字母数字组合</string>
+    <string name="warn_person_info_password_unsame">两次密码不一致</string>
+    <string name="hint_person_info_contact_new">请输入新号码</string>
+    <string name="warn_person_info_contact_invalid">请输入有效手机号码</string>
+    <string name="label_alert_dialog_ok">确认修改</string>
+    <string name="label_alert_dialog_cancel">不改了</string>
+    <string name="label_person_info_contact_change">更换</string>
+    <string name="label_person_info_password_change">修改帐户密码</string>
+    <string name="hint_query_redo_reason">请写下你的返修原因哦，亲～</string>
+</resources>

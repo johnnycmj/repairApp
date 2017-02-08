@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="6dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp" >
+
+    <TextView
+        android:id="@+id/division_page_division_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:textColor="#3d4c5c"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/material_page_month_used_number_label"
+            style="@style/textview_workbench_material_stat_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="98"
+            android:gravity="right"
+            android:text="@string/workbench_material_page_stat_month_used_number_label" />
+
+        <TextView
+            android:id="@+id/material_page_month_used_number"
+            style="@style/textview_workbench_material_stat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:gravity="right"
+            android:minWidth="54dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

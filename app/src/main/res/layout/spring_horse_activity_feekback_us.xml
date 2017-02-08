@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <EditText
+                    android:id="@+id/feedback_us_contact_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/spring_horse_edittext_backgroud"
+                    android:gravity="center_vertical"
+                    android:hint="@string/tips_for_feedback_us_hint_contact_info"
+                    android:inputType="text"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    android:textColor="#ba8e60"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/feedback_us_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="165dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/spring_horse_edittext_backgroud"
+                    android:gravity="top"
+                    android:hint="@string/tips_for_feedback_us_hint_content"
+                    android:lines="6"
+                    android:padding="9dp"
+                    android:textColor="#ba8e60"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

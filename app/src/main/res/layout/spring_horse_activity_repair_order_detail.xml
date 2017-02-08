@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" android:scaleType="fitXY" android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <com.wutong.common.widget.HorizontalSmoothScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10.5dp"
+                    android:paddingTop="10.5dp" >
+
+                    <include layout="@layout/subpage_repair_order_detail" />
+
+                    <include layout="@layout/subpage_repair_order_status" />
+                    <!-- 拍照 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/take_photos"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginRight="49dp"
+                            android:layout_marginTop="9dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/photo_take_selector"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </com.wutong.common.widget.HorizontalSmoothScrollView>
+    </LinearLayout>
+
+</FrameLayout>

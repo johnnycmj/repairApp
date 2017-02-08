@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp" >
+
+                <LinearLayout
+                    android:id="@+id/more_extra_modular_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/page_more_feedback_us"
+                    style="@style/spring_horse_textview_page_more_item"
+                    android:text="@string/av_index_tab_label_modular_page_more_feedback_us" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:contentDescription="@null"
+                    android:src="#d9b480" />
+
+                <LinearLayout
+                    android:id="@+id/page_more_clean_cache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/spring_horse_textview_page_more_item_left_text"
+                        android:text="@string/av_index_tab_label_modular_page_more_clean_cache" />
+
+                    <TextView
+                        android:id="@+id/page_more_cache_size"
+                        style="@style/textview_page_more_item_right_text" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:contentDescription="@null"
+                    android:src="#d9b480"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/page_more_check_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/spring_horse_textview_page_more_item_left_text"
+                        android:text="@string/av_index_tab_label_modular_page_more_check_update" />
+
+                    <TextView
+                        android:id="@+id/page_more_version"
+                        style="@style/spring_horse_textview_page_more_item_right_text" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:contentDescription="@null"
+                    android:src="#d9b480" />
+
+                <TextView
+                    android:id="@+id/page_more_about"
+                    style="@style/spring_horse_textview_page_more_item"
+                    android:text="@string/av_index_tab_label_modular_page_more_about" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:contentDescription="@null"
+                    android:src="#d9b480" />
+
+                <Button
+                    android:id="@+id/logout_btn"
+                    android:layout_width="292dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/spring_horse_logout_submit_selector" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

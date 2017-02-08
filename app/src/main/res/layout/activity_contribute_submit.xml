@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 背景 -->
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+    <!-- 内容 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/spring_horse_grid_repair_order"
+                android:orientation="vertical"
+                android:paddingBottom="22dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="13dp" >
+
+                <EditText
+                    android:id="@+id/contribute_submit_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/spring_horse_edittext_backgroud"
+                    android:gravity="top"
+                    android:hint="@string/contribute_submit_input_hint"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="93dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="9dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- 添加封面、封面缩略图 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingBottom="51dp"
+                android:paddingLeft="24dp" >
+
+                <ImageView
+                    android:id="@+id/contribute_submit_add_img"
+                    android:layout_width="71dp"
+                    android:layout_height="71dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/contribute_add_img_normal" />
+
+                <include
+                    layout="@layout/imageview_upload_photo"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

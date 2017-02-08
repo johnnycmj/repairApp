@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" android:scaleType="fitXY" android:src="@drawable/labor_common_bg_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <LinearLayout
+            android:id="@+id/page_repair_switcher_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/modular_workbench_switchers_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tab_switcher_repair"
+                style="@style/textview_workbench_switchers"
+                android:text="@string/workbench_tab_switcher_simple_stat" />
+
+            <TextView
+                android:id="@+id/tab_switcher_material"
+                style="@style/textview_workbench_switchers"
+                android:text="@string/workbench_tab_switcher_material" />
+
+            <TextView
+                android:id="@+id/tab_switcher_employment"
+                style="@style/textview_workbench_switchers"
+                android:text="@string/workbench_tab_switcher_employment" />
+
+            <TextView
+                android:id="@+id/tab_switcher_division"
+                style="@style/textview_workbench_switchers"
+                android:text="@string/workbench_tab_switcher_division" />
+        </LinearLayout>
+
+        <com.wutong.common.widget.UnableScrollViewPager
+            android:id="@+id/viewpager_workbench"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</FrameLayout>

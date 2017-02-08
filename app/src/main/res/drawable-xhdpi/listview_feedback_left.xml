@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/feedback_item_left_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp" >
+
+            <TextView
+                android:id="@+id/feedback_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:text="卢广仲"
+                android:textColor="#3d4c5c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/feedback_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:text="2013-10-08 15:44"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/feedback_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:padding="5dp"
+            android:text="哈珀孩子哈珀孩子哈珀孩子哈珀孩子哈珀孩子哈珀孩子哈珀孩子哈珀孩子哈珀孩子哈珀孩子哈珀孩子哈珀孩子哈珀孩子哈珀孩子哈珀孩子"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

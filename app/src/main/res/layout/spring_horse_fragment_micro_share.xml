@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/micro_share_picture_per_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="235dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="34dp"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop" />
+                <!-- 点赞 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" >
+
+                    <ImageView
+                        android:id="@+id/micro_share_contribute_img"
+                        android:layout_width="86dp"
+                        android:layout_height="61.5dp"
+                        android:layout_marginLeft="18dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/wfx_btn_tg"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/micro_share_contribute_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_toRightOf="@id/micro_share_contribute_img"
+                        android:background="@drawable/wfx_dhk_bg"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9dp"
+                        android:text="@string/micro_share_contribute_tip"
+                        android:textColor="#feeecd"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/micro_share_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="27dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/icon_like_bg"
+                        android:drawableLeft="@drawable/icon_heart_like"
+                        android:drawablePadding="9dp"
+                        android:gravity="center"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/common_number_zero"
+                        android:textColor="#ba8e60"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="13dp"
+                    android:orientation="horizontal" >
+
+                    <!-- 时间 -->
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/micro_share_day_of_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:ellipsize="none"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textColor="#72c2cd"
+                            android:textSize="34sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/micro_share_year_month_of_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="27dp"
+                            android:ellipsize="none"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:textColor="#aaaaaa"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <!-- 内容 -->
+
+                    <TextView
+                        android:id="@+id/micro_share_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="27dp"
+                        android:layout_marginRight="27dp"
+                        android:background="@drawable/micro_share_content_bg"
+                        android:ellipsize="none"
+                        android:paddingBottom="9dp"
+                        android:paddingLeft="11dp"
+                        android:paddingRight="11dp"
+                        android:paddingTop="9dp"
+                        android:singleLine="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

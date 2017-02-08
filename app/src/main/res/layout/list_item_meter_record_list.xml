@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/info_list_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/meter_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:drawableLeft="@drawable/notice_icon_time"
+            android:drawablePadding="8dp"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/meter_record_time"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/meter_record_building_or_owner"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_lou"
+                android:drawablePadding="8dp"
+                android:ellipsize="none"
+                android:ems="4"
+                android:singleLine="true"
+                android:textColor="#e35c49"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/meter_record_building_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:textColor="#e35c49"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/meter_record_meter_name"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_shuibiao"
+            android:drawablePadding="8dp"
+            android:ellipsize="none"
+            android:ems="4"
+            android:singleLine="true"
+            android:textColor="#6dbac5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/meter_record_meter_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:textColor="#6dbac5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

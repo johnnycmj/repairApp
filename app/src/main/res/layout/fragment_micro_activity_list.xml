@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/love_common_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <com.wutong.common.widget.PullToRefreshView
+            android:id="@+id/complaint_index_pull_refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/complaint_index_empty"
+                layout="@layout/empty_micro_activity_list" />
+
+            <ListView
+                android:id="@+id/complaint_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="10.5dp"
+                android:footerDividersEnabled="false"
+                android:listSelector="@color/transparent"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+        </com.wutong.common.widget.PullToRefreshView>
+    </LinearLayout>
+
+</FrameLayout>

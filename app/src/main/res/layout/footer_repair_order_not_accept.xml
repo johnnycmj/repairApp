@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_repair_order_footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:visibility="gone" >
+
+    <ImageView
+        android:id="@+id/footer_no_more_icon"
+        android:layout_width="68dp"
+        android:layout_height="65.5dp"
+        android:contentDescription="@null"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/icon_logo_mask" />
+
+    <TextView
+        android:id="@+id/footer_no_more_tip"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tips_for_not_accept_no_more"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+</LinearLayout>

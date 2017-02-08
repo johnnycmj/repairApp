@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <com.wutong.common.widget.PullToRefreshInvertView
+            android:id="@+id/receive_pull_refresh_invert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="99"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/receive_empty"
+                layout="@layout/empty_contribute_recieve_list" />
+
+            <ListView
+                android:id="@+id/receive_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/contribute_receive_list_divider_d9b48b"
+                android:dividerHeight="0.5dp"
+                android:listSelector="@drawable/common_list_selector" />
+        </com.wutong.common.widget.PullToRefreshInvertView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/spring_horse_icon_feedback_input_area_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp" >
+
+            <EditText
+                android:id="@+id/receive_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="99"
+                
+                android:background="@drawable/spring_horse_edittext_backgroud"
+                android:hint="@string/prompt_contribute_receive_input"
+                android:imeActionLabel="@string/label_feedback_submit"
+                android:imeOptions="actionSend"
+                android:padding="8dp"
+                android:textColor="#844310"
+                android:textColorHint="#c3c4c5"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/receive_send"
+                android:layout_width="63dp"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:background="@drawable/icon_send_selector"
+                android:enabled="false"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_about_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			<TextView 
+			    android:text="选中任一即可粘贴到输入框中，右上角保存后弹出通知提示切换后的信息。"
+			    android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            <com.wutong.common.widget.GridViewInnerScroll
+                android:id="@+id/grid_setting"
+                android:numColumns="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="输入appflag"
+                android:inputType="text"
+                android:id="@+id/setting_app_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="输入域名和端口，记得结尾要斜杠"
+                android:id="@+id/setting_domain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textUri" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

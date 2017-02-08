@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_background"
+    android:orientation="vertical"
+    tools:context=".StudentIndexActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_repair_order"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp" >
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pagertitlestrip_repair_order"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" />
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,383 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10.5dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grid_repair_order_bg_one"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="24dp" >
+
+                            <LinearLayout
+                                android:id="@+id/dorm_info_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7.5dp"
+                                android:layout_marginTop="7.5dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="24dp"
+                                android:visibility="gone" >
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:contentDescription="@null"
+                                    android:src="@drawable/icon_repair_order_dorm" />
+
+                                <TextView
+                                    android:id="@+id/dorm_name_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/prompt_empty_common_value"
+                                    android:text="@string/label_empty"
+                                    android:textColor="#999999"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7.5dp"
+                                android:layout_marginTop="7.5dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="24dp" >
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:contentDescription="@null"
+                                    android:src="@drawable/icon_repair_order_contact" />
+
+                                <TextView
+                                    android:id="@+id/tel_name_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/prompt_empty_common_value"
+                                    android:text="@string/label_empty"
+                                    android:textColor="#999999"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7.5dp"
+                                android:layout_marginTop="7.5dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="24dp" >
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginRight="8dp"
+                                    android:contentDescription="@null"
+                                    android:src="@drawable/icon_repair_order_type" />
+
+                                <TextView
+                                    android:id="@+id/repair_order_type_select"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="31dp"
+                                    android:layout_marginRight="24dp"
+                                    android:background="@drawable/select_bg_selector"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/label_repair_order_type"
+                                    android:paddingLeft="8dp"
+                                    android:textColor="#363231"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <!-- 楼房 -->
+
+                            <RelativeLayout
+                                android:id="@+id/building_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/building_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="31dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginBottom="7.5dp"
+                                    android:layout_marginLeft="48dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_marginTop="7.5dp"
+                                    android:background="@drawable/select_bg_selector"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/label_spinner_prompt_building"
+                                    android:paddingLeft="8dp"
+                                    android:textColor="#363231"
+                                    android:textSize="15sp" />
+                            </RelativeLayout>
+                            <!-- 宿舍/房间 -->
+
+                            <RelativeLayout
+                                android:id="@+id/room_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/room_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="31dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginBottom="7.5dp"
+                                    android:layout_marginLeft="48dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_marginTop="7.5dp"
+                                    android:background="@drawable/select_bg_selector"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/label_spinner_prompt_room"
+                                    android:paddingLeft="8dp"
+                                    android:enabled="false"
+                                    android:textColor="#363231"
+                                    android:textSize="15sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <!-- 街道 -->
+
+                            <RelativeLayout
+                                android:id="@+id/street_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/street_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="31dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginBottom="7.5dp"
+                                    android:layout_marginLeft="48dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_marginTop="7.5dp"
+                                    android:background="@drawable/select_bg_selector"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/label_spinner_prompt_street"
+                                    android:paddingLeft="8dp"
+                                    android:textColor="#363231"
+                                    android:textSize="15sp" />
+                            </RelativeLayout>
+
+                            <!-- 标志性建筑 -->
+
+                            <RelativeLayout
+                                android:id="@+id/landmark_layout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/landmark_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="31dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginBottom="7.5dp"
+                                    android:layout_marginLeft="48dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_marginTop="7.5dp"
+                                    android:background="@drawable/select_bg_selector"
+                                    android:gravity="center_vertical"
+                                    android:hint="@string/label_spinner_prompt_landmark"
+                                    android:paddingLeft="8dp"
+                                    android:enabled="false"
+                                    android:textColor="#363231"
+                                    android:textSize="15sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <!--  -->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <!-- 报修类别/资产 -->
+
+                            <TextView
+                                android:id="@+id/assets_name_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="31dp"
+                                android:layout_marginBottom="7.5dp"
+                                android:layout_marginLeft="48dp"
+                                android:layout_marginRight="24dp"
+                                android:layout_marginTop="7.5dp"
+                                android:background="@drawable/select_bg_selector"
+                                android:gravity="center_vertical"
+                                android:hint="@string/label_spinner_prompt_asset"
+                                android:paddingLeft="8dp"
+                                android:textColor="#363231"
+                                android:textSize="15sp" />
+                            <!-- 报修项目/问题 -->
+
+                            <TextView
+                                android:id="@+id/trouble_name_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="31dp"
+                                android:layout_marginBottom="7.5dp"
+                                android:layout_marginLeft="48dp"
+                                android:layout_marginRight="24dp"
+                                android:layout_marginTop="7.5dp"
+                                android:enabled="false"
+                                android:background="@drawable/select_bg_selector"
+                                android:gravity="center_vertical"
+                                android:hint="@string/label_spinner_prompt_trouble"
+                                android:paddingLeft="8dp"
+                                android:textColor="#363231"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/trouble_exist_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7.5dp"
+                            android:layout_marginTop="7.5dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="24dp"
+                            android:paddingRight="24dp"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/trouble_existed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_trouble_exist_info"
+                                android:textColor="#e35c49"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7.5dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginRight="24dp"
+                            android:layout_marginTop="7.5dp" >
+
+                            <LinearLayout
+                                android:id="@+id/upload_photo_list"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <LinearLayout
+                            android:id="@+id/other_trouble_form_panel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible" >
+
+                            <EditText
+                                android:id="@+id/other_trouble_value"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7.5dp"
+                                android:layout_marginLeft="13dp"
+                                android:layout_marginRight="13dp"
+                                android:layout_marginTop="7.5dp"
+                                android:background="@drawable/repair_order_remark_bg"
+                                android:hint="@string/prompt_other_trouble_value"
+                                android:lines="4"
+                                android:gravity="top"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 拍照 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/take_photos"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginRight="9dp"
+                            android:layout_marginTop="9dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/photo_take_selector" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="widget_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/widget_checkbox_selection</item>
+    </style>
+    
+    <style name="widget_checkbox_large" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/widget_checkbox_selection_large</item>
+    </style>
+	<style name="widget_checkbox_weekday" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/widget_checkbox_selection</item>
+        <item name="android:paddingLeft">@dimen/not_disturb_setting_checkbox_padding_left</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    
+	<style name="spring_horse_widget_checkbox_weekday" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/spring_horse_widget_checkbox_selection</item>
+        <item name="android:paddingLeft">@dimen/not_disturb_setting_checkbox_padding_left</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:textColor">#ba8e60</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    
+    
+	<style name="widget_checkbox_sort" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/sort_selector</item>
+    </style>
+    
+	<style name="spring_horse_widget_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/spring_horse_widget_checkbox_selection</item>
+    </style>
+    
+	<style name="widget_radio" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/widget_radio_selection</item>
+    </style>
+</resources>

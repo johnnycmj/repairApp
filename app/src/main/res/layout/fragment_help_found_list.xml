@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" android:scaleType="fitXY" android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <LinearLayout
+            android:id="@+id/page_repair_switcher_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spring_horse_modular_repair_page_switchers_bg"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/found_list_filter_past_date"
+                    style="@style/found_filters"
+                    android:layout_centerInParent="true"
+                    android:text="@string/found_filter_past_date_default" />
+
+                <ImageView
+                    android:layout_width="0.5dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/line_left"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="#ffffff" />
+                <ImageView
+                    android:layout_toLeftOf="@+id/line_left"
+                    android:layout_width="0.5dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="#ba8360" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/found_list_filter_place"
+                    style="@style/found_filters"
+                    android:layout_centerInParent="true"
+                    android:text="@string/found_filter_place_default" />
+                <ImageView
+                    android:layout_width="0.5dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/line_center"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="#ffffff" />
+                <ImageView
+                    android:layout_toLeftOf="@+id/line_center"
+                    android:layout_width="0.5dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="#ba8360" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/found_list_filter_item_type"
+                    style="@style/found_filters"
+                    android:layout_centerInParent="true"
+                    android:text="@string/found_filter_item_type_default" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.wutong.common.widget.PullToRefreshView
+            android:id="@+id/complaint_index_pull_refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="15sp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:paddingLeft="12sp"
+            android:paddingRight="12dp" >
+
+            <include
+                android:id="@+id/complaint_index_empty"
+                layout="@layout/empty_help_lost_or_found" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.wutong.common.widget.GridViewInnerScroll
+                        android:id="@+id/grid_lost_or_found"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="3"
+                        android:listSelector="@drawable/common_list_selector"
+                        android:verticalSpacing="9dp"
+                        android:visibility="visible" />
+
+                    <include layout="@layout/footer_lost_and_found" />
+                </LinearLayout>
+            </ScrollView>
+        </com.wutong.common.widget.PullToRefreshView>
+    </LinearLayout>
+
+</FrameLayout>

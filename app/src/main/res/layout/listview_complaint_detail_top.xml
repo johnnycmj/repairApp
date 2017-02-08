@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/complaint_detail_top_bg"
+    android:orientation="vertical"
+    android:paddingBottom="14dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" >
+
+    <TextView
+        android:id="@+id/complaint_detail_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" >
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_person_gray" />
+
+        <TextView
+            android:id="@+id/complaint_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:textColor="#b0b4b9"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/complaint_writer_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:textColor="#b0b4b9"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/complaint_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_time_gray"
+                android:drawablePadding="8dp"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:textColor="#b0b4b9"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 宿舍信息、维修人员信息 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/complaint_dormitory_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_place_dark"
+            android:drawablePadding="8dp"
+            android:ellipsize="none"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:singleLine="true"
+            android:textColor="#b0b4b9"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/complaint_repairman_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_repairman_dark"
+                android:drawablePadding="8dp"
+                android:ellipsize="none"
+                android:paddingBottom="6dp"
+             android:paddingTop="6dp"
+                android:singleLine="true"
+                android:textColor="#b0b4b9"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/complaint_category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_complaint_category_gray_dark"
+        android:drawablePadding="8dp"
+        android:ellipsize="none"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:singleLine="true"
+        android:textColor="#b0b4b9"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/complaint_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:lineSpacingExtra="7dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="6dp"
+        android:textColor="#b0b4b9"
+        android:textSize="14sp" />
+
+</LinearLayout>

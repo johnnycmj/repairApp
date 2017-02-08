@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/info_list_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="32.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/label_material_info_query_material_item_code_label"
+            android:textColor="#ba8e60"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/grant_time"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right|center_vertical"
+            android:textColor="#ba8e60"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="32.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/grant_code"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textColor="#ba8e60"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/grant_status_name"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right|center_vertical"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_feekback_us">意见反馈</string>
+    <string name="hint_activity_feekback_us_content">请填写意见和建议</string>
+    <string name="hint_activity_feekback_us_email">请填写手机或电子邮箱（选填）</string>
+    <string name="label_activity_feekback_us_submit">提交</string>
+</resources>

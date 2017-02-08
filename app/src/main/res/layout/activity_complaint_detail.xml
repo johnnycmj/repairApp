@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <com.wutong.common.widget.PullToRefreshView
+            android:id="@+id/complaint_detail_pull_refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="99"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/complaint_detail_empty"
+                layout="@layout/empty_complaint_detail" />
+
+            <ListView
+                android:listSelector="@drawable/common_list_selector"
+                android:id="@+id/complaint_receive_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/compliant_detail_divider"
+                android:dividerHeight="1dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false" />
+        </com.wutong.common.widget.PullToRefreshView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:contentDescription="@null"
+                android:src="#b6babf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="12dp" >
+
+                <EditText
+                    android:id="@+id/complaint_receive_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="99"
+                    android:paddingLeft="8dp"
+                    android:background="@drawable/edittext_backgroud"
+                    android:hint="@string/hint_activity_complaint_detail_receive"
+                    android:textColor="#999999"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/complaint_submit"
+                    android:layout_width="53dp"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_send_selector"
+                    android:enabled="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

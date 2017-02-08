@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/repairman_like_image_bg"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/repairman_like_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" >
+
+        <LinearLayout
+            android:id="@+id/repairman_like_item_like_layout"
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_repairman_like_bg_selector"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/repairman_like_item_like_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_repairman_like_selector"
+                android:drawablePadding="7dp"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#844310"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/repairman_like_item_like_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/repairman_like_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#844310"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/repairman_like_item_campus_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#ba8e60"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

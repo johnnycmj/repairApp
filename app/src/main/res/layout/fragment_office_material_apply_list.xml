@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.wutong.common.widget.PullToRefreshView
+        android:id="@+id/office_material_apply_list_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/office_material_apply_list_empty"
+            layout="@layout/empty_office_material_apply_list" />
+
+        <ListView
+            android:id="@+id/office_material_apply_list_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:divider="@null"
+            android:dividerHeight="8dp"
+            android:listSelector="@drawable/common_list_selector"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" />
+    </com.wutong.common.widget.PullToRefreshView>
+
+</LinearLayout>

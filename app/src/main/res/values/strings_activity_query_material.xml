@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_query_materials">材料确认</string>
+    <string name="label_query_materials_submit">确认</string>
+    <string name="label_query_materials_time">发放时间：</string>
+    <string name="label_query_materials_status">发放状态：</string>
+    <string name="hint_query_materials_empty_brand">无品牌</string>
+    <string name="hint_query_materials_empty_spec">无型号</string>
+    <string name="hint_query_materials_empty_name">没有名称</string>
+    <string name="hint_query_materials_empty_number">数量未知</string>
+</resources>

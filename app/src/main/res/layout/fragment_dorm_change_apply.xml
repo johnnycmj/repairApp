@@ -1,0 +1,213 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <!-- 原宿舍 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:ellipsize="none"
+                android:gravity="right|center_vertical"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/fragment_dorm_change_apply_current_dorm_info"
+                android:textColor="#844310"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/change_apply_current_dorm_info"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/dorm_change_apply_current_dorm_bg"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!-- 申请理由 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="47dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:ellipsize="none"
+                android:gravity="right|center_vertical"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/fragment_dorm_change_apply_current_dorm_type"
+                android:textColor="#844310"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/change_apply_type"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_txt"
+                android:ellipsize="none"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textColor="#844310"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!-- 申请宿舍楼 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="47dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:ellipsize="none"
+                android:gravity="right|center_vertical"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/fragment_dorm_change_apply_current_dorm_building"
+                android:textColor="#844310"
+                android:textSize="15sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/change_apply_building"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/spring_horse_edittext_backgroud"
+                android:completionThreshold="1"
+                android:ellipsize="none"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textColor="#844310"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!-- 申请宿舍号 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="47dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:ellipsize="none"
+                android:gravity="right|center_vertical"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/fragment_dorm_change_apply_current_dorm_room"
+                android:textColor="#844310"
+                android:textSize="15sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/change_apply_room"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/spring_horse_edittext_backgroud"
+                android:completionThreshold="1"
+                android:ellipsize="none"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textColor="#844310"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!-- 申请床位 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="47dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:ellipsize="none"
+                android:gravity="right|center_vertical"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/fragment_dorm_change_apply_current_dorm_bed"
+                android:textColor="#844310"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/change_apply_bed"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_txt"
+                android:ellipsize="none"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textColor="#844310"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

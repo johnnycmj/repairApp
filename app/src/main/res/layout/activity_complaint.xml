@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@null"
+        android:src="#b6babf" />
+
+    <ListView
+        android:listSelector="@drawable/common_list_selector"
+        android:id="@+id/complaint_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="13dp"
+        android:footerDividersEnabled="false"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo_list_bottom" />
+
+    <LinearLayout
+        android:id="@+id/toggle_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="4dp" >
+
+        <Button
+            android:id="@+id/material_toggle_select_all"
+            style="@style/widget_button_half"
+            android:layout_width="135dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/label_materail_select_toggle_select_all" />
+
+        <Button
+            android:id="@+id/material_select_submit"
+            style="@style/widget_button_half"
+            android:layout_width="135dp"
+            android:layout_height="30dp"
+            android:text="@string/label_materail_select_submit" />
+    </LinearLayout>
+
+</LinearLayout>

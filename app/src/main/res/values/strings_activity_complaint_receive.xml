@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_complaint_receive">建议回复</string>
+    <string name="hint_activity_complaint_receive_content" >请填写回复内容</string>
+    <string name="label_activity_complaint_receive_submit" >回复</string>
+    
+</resources>

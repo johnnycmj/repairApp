@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/page_repair_switcher_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/modular_repair_page_switchers_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/statistic_office_apply_switcher_apply_info"
+            style="@style/textview_page_repair_switchers"
+            android:enabled="false"
+            android:text="@string/label_statistic_office_apply_switcher_apply_info" />
+
+        <TextView
+            android:id="@+id/statistic_office_apply_switcher_material_info"
+            style="@style/textview_page_repair_switchers"
+            android:text="@string/label_statistic_office_apply_switcher_material_info" />
+
+        <TextView
+            android:id="@+id/statistic_office_apply_switcher_division_info"
+            style="@style/textview_page_repair_switchers"
+            android:text="@string/label_statistic_office_apply_switcher_division_info" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_office_material_statistic_division_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

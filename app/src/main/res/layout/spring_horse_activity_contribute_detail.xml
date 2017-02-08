@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" android:scaleType="fitXY" android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="34dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/contribute_detail_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="235dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@null" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="none"
+                                android:singleLine="true"
+                                android:text="@string/activity_contribute_deial_wirter_label"
+                                android:textColor="#ba8e60"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/contribute_detail_writer_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="none"
+                                android:singleLine="true"
+                                android:textColor="#844310"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/contribute_detail_like"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_marginRight="11dp"
+                                android:background="@drawable/icon_like_bg"
+                                android:drawableLeft="@drawable/icon_heart_normal"
+                                android:drawablePadding="9dp"
+                                android:gravity="center"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:text="@string/common_number_zero"
+                                android:textColor="#ba8e60"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/contribute_detail_receive"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:background="@drawable/icon_like_bg"
+                                android:drawableLeft="@drawable/icon_contribute_receive"
+                                android:drawablePadding="9dp"
+                                android:gravity="center"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:text="@string/common_number_zero"
+                                android:textColor="#ba8e60"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:contentDescription="@null"
+                        android:layout_marginBottom="13dp"
+                        android:src="#d9b48b" />
+                    <!-- 内容 -->
+
+                    <TextView
+                        android:id="@+id/contribute_detail_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="none"
+                        android:lineSpacingExtra="8dp"
+                        android:textColor="#ba8e60"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/repairman_like_head_image"
+                android:layout_width="156dp"
+                android:layout_height="114dp"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/repairman_like_image_bg"
+                android:contentDescription="@null"
+                android:padding="2dp"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="26dp"
+                android:layout_toRightOf="@id/repairman_like_head_image"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/repairman_like_head_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="26dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:textColor="#844310"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/repairman_like_head_campus_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:textColor="#ba8e60"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/repairman_like_item_like_layout"
+                    android:layout_width="67dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icon_repairman_like_bg_selector"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/repairman_like_item_like_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_repairman_like_selector"
+                        android:drawablePadding="7dp"
+                        android:ellipsize="none"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="#844310"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@null"
+            android:src="#d9b48b" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@null"
+            android:src="#fff9eb" />
+    </LinearLayout>
+
+</FrameLayout>

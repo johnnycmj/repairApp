@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" android:scaleType="fitXY" android:src="@drawable/labor_common_bg_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <com.wutong.common.widget.PullToRefreshView
+            android:id="@+id/division_material_used_pull_refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/division_material_used_empty"
+                layout="@layout/empty_division_material_used_list" />
+
+            <ListView
+                android:listSelector="@drawable/common_list_selector"
+                android:id="@+id/division_material_used_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="12dp"
+                android:background="@drawable/info_list_item_bg"
+                android:divider="@drawable/workbench_material_list_divider"
+                android:dividerHeight="1dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false" />
+        </com.wutong.common.widget.PullToRefreshView>
+    </LinearLayout>
+
+</FrameLayout>

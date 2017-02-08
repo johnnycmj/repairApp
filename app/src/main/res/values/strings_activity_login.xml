@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="title_activity_login">登&#160;&#160;录</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">请输入帐号</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in_register">登录</string>
+    <string name="action_sign_in_short">完成并登录</string>
+    <string name="menu_forgot_password">忘记密码？</string>
+    <string name="login_progress_signing_in">正在登录……</string>
+    <string name="error_invalid_username">用户名无效</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">用户名和是必填的哦！</string>
+	<string name="label_checkbox_remember_password">记住密码</string>
+	<string name="label_checkbox_auto_sign_in">自动登录</string>
+</resources>

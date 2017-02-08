@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="9dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="9dp" >
+
+    <TextView
+        android:id="@+id/pre_list_material_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:textColor="#e35c49"
+        android:textSize="21sp" />
+
+    <CheckBox
+        android:id="@+id/pre_list_is_checked"
+        style="@style/widget_checkbox_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/pre_list_material_total_number"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/pre_list_material_name"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:textColor="#666666"
+        android:textSize="21sp" />
+
+</RelativeLayout>

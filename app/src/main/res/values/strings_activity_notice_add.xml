@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_notice_add">发布公告</string>
+    <string name="label_notice_add_submit">提交</string>
+    <string name="hint_notice_add_title">请填写公告标题</string>
+    <string name="hint_notice_add_content">请填写公告内容</string>
+    <string name="label_notice_add_type">公告类型</string>
+</resources>

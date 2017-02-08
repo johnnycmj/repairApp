@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" android:scaleType="fitXY" android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <com.wutong.common.widget.PullToRefreshView
+            android:id="@+id/complaint_index_pull_refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="15sp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/complaint_index_empty"
+                layout="@layout/spring_horse_empty_contribute" />
+
+            <ListView
+                android:listSelector="@drawable/common_list_selector"
+                android:id="@+id/complaint_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="13dp"
+                android:footerDividersEnabled="false" />
+        </com.wutong.common.widget.PullToRefreshView>
+    </LinearLayout>
+
+</FrameLayout>

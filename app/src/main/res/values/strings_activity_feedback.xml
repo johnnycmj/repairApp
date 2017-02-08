@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prompt_feedback_input">反馈信息尽量简洁</string>
+    <string name="label_feedback_submit">提交</string>
+    <string name="checkbox_label_need_refix">需要返修</string>
+    <string name="label_press_to_voice">按住说话</string>
+</resources>

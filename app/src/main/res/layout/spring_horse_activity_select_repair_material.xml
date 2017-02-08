@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" android:scaleType="fitXY" android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="wrap_content"
+            layout="@layout/head_titlebar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:layout_weight="99"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/material_select_empty"
+                layout="@layout/spring_horse_empty_material_select" />
+
+            <ListView
+                android:listSelector="@drawable/common_list_selector"
+                android:id="@+id/materail_all"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_list_item_bg"
+                android:divider="@drawable/common_list__padding_divider" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/material_select_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginRight="47dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/spring_horse_append_material_selector"
+            android:text="@string/label_select_materail_submit_select"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_complaint_detail">建&#160;&#160;议</string>
+     <string name="hint_activity_complaint_detail_receive">请填写回复内容</string>
+</resources>

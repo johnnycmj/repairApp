@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="97dp"
+    android:background="@drawable/info_list_item_bg"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" >
+
+        <TextView
+            android:id="@+id/notice_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_time_yellow"
+            android:drawablePadding="8dp"
+            android:ellipsize="none"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="#ba8e60"
+            android:textIsSelectable="false"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/notice_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/notice_date"
+            android:singleLine="true"
+            android:textColor="#381f0c"
+            android:textIsSelectable="false"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@null"
+        android:src="#d8d8d8" />
+
+    <TextView
+        android:id="@+id/notice_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:lineSpacingExtra="8dp"
+        android:lines="2"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:textColor="#ba8e60"
+        android:textIsSelectable="false"
+        android:textSize="14sp" />
+
+</LinearLayout>

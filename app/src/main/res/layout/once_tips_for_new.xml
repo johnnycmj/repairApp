@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wutong.common.widget.InterceptTouchImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tips_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:src="#99000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="182.5dp"
+            android:layout_height="215.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/spring_horse_tips_for_micro_share_right"
+            android:contentDescription="@null"
+            android:src="@drawable/tips_for_micro_share" />
+
+        <ImageView
+            android:layout_width="99dp"
+            android:layout_height="213.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/spring_horse_tips_for_more_right"
+            android:contentDescription="@null"
+            android:src="@drawable/tips_for_more" />
+    </RelativeLayout>
+
+</com.wutong.common.widget.InterceptTouchImageView>

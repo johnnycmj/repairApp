@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:onClick="childOnClick"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_margin="5dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"><!-- 要求引用该布局的activity实现 public void childOnClick(View v)方法 -->
+
+    <TextView
+        android:id="@+id/repair_order_child_asset_name"
+        style="@style/textview_repair_order_child_asset"
+        android:layout_width="100dp"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/repair_order_child_trouble_name"
+        style="@style/textview_repair_order_child_trouble"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/repair_order_child_time"
+        style="@style/textview_repair_order_child_time"
+        android:layout_width="100dp"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>

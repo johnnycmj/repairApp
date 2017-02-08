@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10.5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10.5dp"
+        android:background="@drawable/grid_repair_order_bg_one"
+        android:orientation="vertical" >
+
+        <com.wutong.common.widget.HorizontalSmoothScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="99" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <include layout="@layout/subpage_repair_order_detail_large" />
+
+                    <include layout="@layout/subpage_repair_order_status" />
+                </FrameLayout>
+            </LinearLayout>
+        </com.wutong.common.widget.HorizontalSmoothScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/upload_photo_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:weightSum="100" >
+
+                <Button
+                    android:id="@+id/repair_detail_accept_order"
+                    style="@style/widget_button_repair_detail_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_weight="100"
+                    android:text="@string/label_repair_order_detail_large_accept_order"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/repair_detail_finish_order"
+                    style="@style/widget_button_repair_detail_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginRight="5.5dp"
+                    android:layout_weight="40"
+                    android:text="@string/label_repair_order_detail_large_finish_order"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/repair_detail_refix_finish_order"
+                    style="@style/widget_button_repair_detail_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginRight="5.5dp"
+                    android:layout_weight="40"
+                    android:text="@string/label_repair_order_detail_large_finish_order"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/repair_detail_take_photo"
+                    style="@style/widget_button_repair_detail_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_weight="60"
+                    android:text="@string/label_repair_order_detail_large_take_photo"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/query_asset_issue"
+        style="@style/widget_button_half"
+        android:layout_width="135dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/label_repair_info_check_and_accept"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 背景 -->
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" android:scaleType="fitXY" android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+    <!-- 内容 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <LinearLayout
+            android:layout_marginTop="52dp"
+            android:layout_width="fill_parent"
+            android:layout_height="187dp"
+            android:layout_marginLeft="@dimen/help_lost_no_like_tip_margin_left_and_right"
+            android:layout_marginRight="@dimen/help_lost_no_like_tip_margin_left_and_right"
+            android:background="@drawable/help_lost_no_like_tips_bg"
+            android:gravity="center"
+            android:paddingTop="22dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ellipsize="none"
+                android:gravity="left"
+                android:lineSpacingExtra="4dp"
+                android:singleLine="false"
+                android:text="@string/help_lost_no_like_tip"
+                android:textColor="#844310"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

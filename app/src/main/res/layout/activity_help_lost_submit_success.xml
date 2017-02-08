@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 背景 -->
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@null" android:scaleType="fitXY" android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+    <!-- 内容 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <ImageView
+            android:layout_width="91dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="69dp"
+            android:contentDescription="@null"
+            android:src="@drawable/help_lost_submit_success_success" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="39dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:text="@string/help_lost_submit_sussess_success_label"
+            android:textColor="#da3931"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:background="@drawable/help_lost_submit_success_tips_bg"
+            android:layout_marginLeft="@dimen/help_lost_submit_success_tip_margin_left_and_right"
+            android:layout_marginRight="@dimen/help_lost_submit_success_tip_margin_left_and_right"
+            android:layout_width="fill_parent"
+            android:layout_height="102dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:text="@string/help_lost_submit_sussess_tip_first"
+                    android:textColor="#844310"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/help_lost_submit_success_rockets"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:text="@string/help_lost_submit_sussess_tip_second"
+                    android:textColor="#844310"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:text="@string/help_lost_submit_sussess_tip_third"
+                    android:textColor="#844310"
+                    android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

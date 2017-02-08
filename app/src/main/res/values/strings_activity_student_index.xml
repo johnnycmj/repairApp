@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_student_index">报修首页</string>
+    <string name="label_student_index_dorm">宿舍</string>
+    <string name="label_student_index_public_inner">室内</string>
+    <string name="label_student_index_public_outter">室外</string>
+    <string name="label_student_index_history">历史</string>
+    <string name="label_student_index_more">更多</string>
+</resources>

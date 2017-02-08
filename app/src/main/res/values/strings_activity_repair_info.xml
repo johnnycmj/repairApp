@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_repair_info">报修单详情</string>
+    <string name="label_repair_info_check_and_accept">确认验收</string>
+    <string name="label_repair_info_refix_check_and_accept">申请返修</string>
+    <string name="label_repair_info_feedback">反馈</string>
+    <string name="label_repair_info_refix">申请返修</string>
+    <string name="label_repair_info_more">&#8230;</string>
+    <string name="label_repair_info_complete">完成</string>
+    <string name="label_repair_info_repair_code">报修单号</string>
+    <string name="label_repair_info_repair_status">报修状态</string>
+    <string name="label_repair_info_dorm_info">报修地点</string>
+    <string name="label_repair_info_contact_name">维修人员</string>
+    <string name="label_repair_info_contact_tel">联系电话</string>
+    <string name="label_repair_info_contact_tel_call">联系他/她</string>
+    <string name="label_repair_info_asset_name">报修类型</string>
+    <string name="label_repair_info_trouble_name">报修项目</string>
+    <string name="label_repair_info_other_trouble_name">备注信息</string>
+    <string name="label_repair_info_start_time">报修时间</string>
+    <string name="label_repair_info_accept_time">受理时间</string>
+    <string name="label_repair_info_end_time">完成时间</string>
+    <string name="label_repair_info_propose_photos">报修拍照</string>
+    <string name="label_repair_info_propose_photos_more">查看</string>
+    <string name="label_repair_info_feedback_count">反馈信息</string>
+    <string name="label_repair_info_thumb_image_info">图片信息</string>
+    <string name="radio_assess_dissatisfied">不满意</string>
+    <string name="radio_assess_satisfied">满意</string>
+    <string name="radio_assess_normal">一般</string>
+</resources>

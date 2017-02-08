@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 背景 -->
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+    <!-- 内容 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="104dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/likeable_found_tip_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/likeable_found_tip"
+                android:textColor="#f5e1c1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="33dp"
+            android:background="@drawable/likeable_found_flag_bg"
+            android:gravity="center_vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:text="@string/likeable_found_flag"
+            android:textColor="#f5e1c1"
+            android:textSize="15sp" />
+
+        <include
+            android:id="@+id/likeable_found_empty"
+            layout="@layout/empty_likeable_found" />
+
+        <ListView
+            android:id="@+id/likeable_found_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="9sp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/info_list_item_bg"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/common_list_selector"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" />
+    </LinearLayout>
+
+</FrameLayout>

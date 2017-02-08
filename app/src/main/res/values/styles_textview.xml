@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="textview_repair_order_apply">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview_repair_order_group" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview_repair_order_group_children_count">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview_repair_order_child">
+        <item name="android:textColor">#ff8c00</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textview_repair_order_child_asset" parent="textview_repair_order_child">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_repair_order_child_trouble" parent="textview_repair_order_child">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_repair_order_child_time" parent="textview_repair_order_child">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_fix_order_group">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview_fix_order_group_children_count">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview_fix_order_child">
+        <item name="android:textColor">#ff8c00</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textview_fix_order_child_asset" parent="textview_fix_order_child">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_fix_order_child_trouble" parent="textview_fix_order_child">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_fix_order_child_time" parent="textview_fix_order_child">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_fix_info">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="textview_fix_info_value">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="textview_fix_info_value_small" parent="textview_fix_info_value">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="textview_fix_info_value_full_show">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="textview_repair_info">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="textview_repair_info_value">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="textview_repair_info_value_small" parent="textview_repair_info_value">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="textview_repair_info_value_full_show">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="textview_materail_select_name">
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="textview_materail_select_total">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview_feedback_name">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview_feedback_content">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/feedback_content_background</item>
+    </style>
+
+    <style name="textview_feedback_voice">
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/chatfrom_group_voice_left_playing</item>
+    </style>
+
+    <style name="textview_feedback_time">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="textview_repair_order_pager_asset" parent="textview_fix_order_child">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_repair_order_pager_trouble" parent="textview_fix_order_child">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_repair_order_pager_time" parent="textview_fix_order_child">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_repair_order_pager_status" parent="textview_fix_order_child">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_repair_order_pager_address" parent="textview_fix_order_child">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_room_asset_group">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="textview_room_asset_child">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="textview_empty_series">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_material_grant">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_material_grant_other">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_query_material">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="textview_query_material_list_view">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_query_material_value">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="textview_person_info">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="textview_person_info_value">
+        <item name="android:textColor">#363231</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+    
+    <style name="spring_horse_textview_person_info">
+        <item name="android:textColor">#844310</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="spring_horse_textview_person_info_value">
+        <item name="android:textColor">#844310</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="textview_complaint_index_title">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="textview_complaint_index_other">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="textview_complaint_receive">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="textview_complaint_detail_title">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="textview_complaint_detail_content">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="textview_complaint_detail_other">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="textview_my_material">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_about">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_about_phone" parent="textview_about">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#363231</item>
+    </style>
+
+    <style name="textview_about_copyright">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_fast_message">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_update_info">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="textview_update_log" parent="textview_update_info">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="textview_workbench_repair_stat_label">
+        <item name="android:textColor">#3d4c5c</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="textview_workbench_repair_stat_value">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="textview_workbench_repair_stat_head">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview_workbench_repair_stat_time">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="textview_workbench_repair_stat_number">
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="textview_workbench_employment_stat_label_and_number">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="spring_horse_textview_workbench_employment_stat_label_and_number">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ba8e60</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview_workbench_material_stat_content">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="spring_horse_textview_workbench_material_stat_content">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ba8e60</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview_page_repair_switchers" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/page_repair_switcher_not_accept_text_color_selector</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/page_repair_switcher_bg</item>
+    </style>
+    
+    <style name="found_filters" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#844310</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:drawableRight">@drawable/icon_arrow_down_orange</item>
+    </style>
+    
+    <style name="spring_horse_textview_page_repair_switchers" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/spring_horse_page_repair_switcher_not_accept_text_color_selector</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/spring_horse_page_repair_switcher_bg</item>
+    </style>
+    
+    <style name="textview_workbench_switchers" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/page_repair_switcher_not_accept_text_color_selector</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/page_repair_switcher_bg</item>
+    </style>
+
+    <style name="textview_page_repair_filters" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/page_repair_switcher_filter_text_color_selector</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="textview_page_more_item" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#363231</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:drawableRight">@drawable/icon_arrow_right</item>
+    </style>
+    
+    <style name="spring_horse_textview_page_more_item" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#844310</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:drawableRight">@drawable/spring_horse_icon_arrow_right</item>
+    </style>
+    
+    <style name="textview_page_more_item_left_text" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#363231</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_weight">98</item>
+    </style>
+    
+    <style name="textview_page_more_item_right_text" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+    
+    <style name="spring_horse_textview_page_more_item_left_text" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#844310</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_weight">98</item>
+    </style>
+    
+    <style name="spring_horse_textview_page_more_item_right_text" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ba8e60</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+</resources>

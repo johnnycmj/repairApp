@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/common_normal_alert_dialog"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/common_normal_alert_dialog"
+        android:layout_height="48dp"
+        android:background="@drawable/labor_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/DialogText.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/common_single_select_title" 
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip" />
+    </LinearLayout>
+
+    <kankan.wheel.widget.WheelView
+        android:background="@drawable/common_wheel_bg"
+        android:id="@+id/single_select_item_wheel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="360dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="3dip" >
+
+        <Button
+            android:id="@+id/negativeButton"
+            style="@style/DialogText.Nagetive"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/common_alert_cancel" />
+
+        <Button
+            android:id="@+id/positiveButton"
+            style="@style/DialogText.Positive"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/common_alert_ok" />
+    </LinearLayout>
+
+</LinearLayout>

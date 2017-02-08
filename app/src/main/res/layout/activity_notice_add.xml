@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_background"
+    android:paddingTop="30dp"
+    tools:context=".NoticeAddActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+
+        <EditText
+            android:id="@+id/notice_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="top"
+            android:hint="@string/hint_notice_add_title"
+            android:inputType="textEmailAddress" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:gravity="center_vertical"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/label_notice_add_type"
+                android:textColor="#212121"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/notice_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/label_notice_add_type"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/notice_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="@string/hint_notice_add_content"
+            android:lines="6" />
+
+        <Button
+            android:id="@+id/notice_submit"
+            style="@style/widget_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_notice_add_submit" />
+    </LinearLayout>
+
+</ScrollView>

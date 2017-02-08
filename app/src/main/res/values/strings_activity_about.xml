@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_about">关于梧桐</string>
+    <string name="label_copyright_info">梧桐科技&#160;&#160;&#160;&#160;版权所有</string>
+    <string name="label_copyright_info_fjnu">梧桐信息科技有限公司&#160;&#160;&#160;&#160;技术支持</string>
+    <string name="label_copyright_info_fjcc">梧桐信息科技有限公司&#160;&#160;&#160;&#160;版权所有</string>
+    <string name="label_about_phone_tips">客服电话(按当地市话标准收费)</string>
+    <string name="label_customer_service_phone">客服电话：0591&#8211;88511888</string>
+    <string name="tel_customer_service_phone">059188511888</string>
+    <string name="label_customer_service_qq">客服Q&#160;&#160;Q：&#160;&#160;&#160;&#160;100779979</string>
+	<string name="fjnu_platform_info">福建师范范大学后勤服务平台</string>
+	<string name="label_about_copyright_line_one">Copyright ©2011&#8211;2013 WUTONG Corp.</string>
+	<string name="label_about_copyright_line_two">All Rights Reserved.</string>
+</resources>

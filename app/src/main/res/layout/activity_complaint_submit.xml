@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <GridView
+            android:id="@+id/complaint_submit_category_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:horizontalSpacing="6dp"
+            android:listSelector="@drawable/complaint_category_selector"
+            android:numColumns="4"
+            android:verticalSpacing="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_complaint_peple" />
+
+            <TextView
+                android:id="@+id/complaint_submit_writer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.5dp"
+                android:ellipsize="none"
+                android:hint="@string/hint_activity_complaint_submit_name"
+                android:singleLine="true"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/complaint_submit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_backgroud"
+            android:hint="@string/hint_activity_complaint_submit_title"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/complaint_submit_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_backgroud"
+            android:gravity="top"
+            android:hint="@string/tips_for_complaint_submit_hint_content"
+            android:lines="5"
+            android:padding="5dp"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</FrameLayout>

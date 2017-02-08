@@ -1,0 +1,417 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="10dp" >
+
+            <!-- 当月 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_list_item_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/repair_page_current_month_month_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/workbench_repair_head"
+                    android:gravity="center"
+                    android:textColor="#e35c49"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_total_number_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_current_month_total"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@null"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="#d8d8d8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_not_accept_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_current_month_not_accept"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@null"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="#d8d8d8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_repairing_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_current_month_repairing"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 今天 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/info_list_item_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/workbench_repair_head"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/workbench_repair_page_stat_today_label"
+                        android:textColor="#e35c49"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/repair_page_today_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="#363231"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_total_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_today_total"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@null"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="#d8d8d8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_dealt_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_today_dealt"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@null"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="#d8d8d8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_complete_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_today_complete"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 本周 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/info_list_item_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/workbench_repair_head" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/workbench_repair_page_stat_current_week_label"
+                        android:textColor="#e35c49"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/repair_page_current_week_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="#363231"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_total_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_current_week_total"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@null"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="#d8d8d8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_dealt_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_current_week_dealt"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@null"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="#d8d8d8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_complete_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_current_week_complete"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 本年 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/info_list_item_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/workbench_repair_head"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/workbench_repair_page_stat_current_year_label"
+                        android:textColor="#e35c49"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/repair_page_current_year_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="#363231"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_total_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_current_year_total"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@null"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="#d8d8d8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_dealt_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_current_year_dealt"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@null"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="#d8d8d8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/textview_workbench_repair_stat_label"
+                            android:text="@string/workbench_repair_page_stat_complete_label" />
+
+                        <TextView
+                            android:id="@+id/repair_page_current_year_complete"
+                            style="@style/textview_workbench_repair_stat_value" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

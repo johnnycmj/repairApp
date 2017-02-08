@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="99"
+        android:orientation="vertical"
+        android:paddingBottom="17dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="17dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/select_building"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginRight="107dp"
+                android:background="@drawable/select_bg_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_room_meter_selete_building"
+                android:paddingLeft="8dp"
+                android:textColor="#363231"
+                android:textColorHint="#363231"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/select_division_unit"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginRight="107dp"
+                android:background="@drawable/select_bg_selector"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_room_meter_selete_division_unit"
+                android:paddingLeft="8dp"
+                android:textColor="#363231"
+                android:textColorHint="#363231"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/empty_view"
+                layout="@layout/empty_room_meter" />
+
+            <ListView
+                android:listSelector="@drawable/common_list_selector"
+                android:id="@+id/room_meter_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/widget_button_positive"
+            android:layout_width="107dp"
+            android:layout_height="37dp"
+            android:text="@string/label_room_meter_submit"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

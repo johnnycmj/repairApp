@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_apply_material">材料使用情况</string>
+    <string name="label_apply_material_more">&#8230;</string>
+    <string name="label_material_delete">删除</string>
+    <string name="label_append_material">添加材料</string>
+    <string name="label_recovery_material">回收材料</string>
+    <string name="label_apply_submit">提交</string>
+    <string name="text_materail_number_default">0</string>
+    <string name="label_materail_number_last_used">已使用</string>
+    <string name="label_materail_number_remain">备件数</string>
+    <string name="label_materail_spec">型号</string>
+    <string name="label_materail_brand">品牌</string>
+    <string name="label_select_material">选择材料</string>
+
+</resources>

@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="#eeeeee" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <!-- 搜索框 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_weight="99"
+                android:background="@drawable/edittext_backgroud"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/meter_change_record_search_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="99"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/meter_change_record_searchbox_hint"
+                    android:imeActionLabel="搜索"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textColor="#363231"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/meter_change_record_search_clean"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_delete" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/meter_change_record_search_submit"
+                android:layout_width="55dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:src="@drawable/search_selector" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/complaint_index_empty"
+            layout="@layout/empty_meter_change_record" />
+
+        <ListView
+            android:id="@+id/complaint_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:divider="@color/transparent"
+            android:dividerHeight="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:footerDividersEnabled="false"
+            android:listSelector="@color/transparent" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <LinearLayout
+            android:id="@+id/page_switcher_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spring_horse_modular_repair_page_switchers_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/fee_list_switcher_not_pay"
+                style="@style/spring_horse_textview_page_repair_switchers"
+                android:enabled="false"
+                android:text="@string/my_publish_lost_found_switcher_lost" />
+
+            <TextView
+                android:id="@+id/fee_list_switcher_pay_history"
+                style="@style/spring_horse_textview_page_repair_switchers"
+                android:text="@string/my_publish_lost_found_switcher_found" />
+            <TextView
+                android:id="@+id/fee_list_switcher_complaint"
+                style="@style/spring_horse_textview_page_repair_switchers"
+                android:text="@string/my_publish_lost_found_switcher_complaint" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+</FrameLayout>

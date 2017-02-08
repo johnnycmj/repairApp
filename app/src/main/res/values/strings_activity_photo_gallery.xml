@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_thumb_load">加载图片列表中</string>
+    <string name="photo_detail_load">原始图片加载比较慢，请耐心等待</string>
+    
+</resources>

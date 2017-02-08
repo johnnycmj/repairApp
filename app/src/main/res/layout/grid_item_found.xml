@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 无图 -->
+
+    <LinearLayout
+        android:id="@+id/found_item_no_img_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/help_lost_found_list_width"
+        android:background="@drawable/help_found_or_lost_item_bg"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/found_item_no_img_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/icon_repair_order_dorm"
+            android:drawablePadding="8dp"
+            android:ellipsize="end"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:textColor="#e35c49"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/found_item_no_img_remark"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/help_lost_found_list_remark_height"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="false"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- 有图 -->
+
+    <ImageView
+        android:id="@+id/found_item_with_img_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/help_lost_found_list_width"
+        android:background="@drawable/help_lost_found_list_img_bg"
+        android:contentDescription="@null"
+        android:padding="1px"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/found_item_with_img_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#5c000000"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/more_background"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/dorm_repair"
+        style="@style/more_button"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="@string/label_student_index_dorm" />
+
+    <Button
+        android:id="@+id/public_repair_inner"
+        style="@style/more_button"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:enabled="true"
+        android:text="@string/label_student_index_public_inner" />
+
+    <Button
+        android:id="@+id/public_repair_outter"
+        style="@style/more_button"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:enabled="true"
+        android:text="@string/label_student_index_public_outter" />
+
+</LinearLayout>

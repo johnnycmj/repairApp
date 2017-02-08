@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_material_info">报修材料</string>
+    <string name="hint_my_materials_empty_brand">无品牌</string>
+    <string name="hint_my_materials_empty_spec">无型号</string>
+    <string name="hint_my_materials_empty_name">没有名称</string>
+    <string name="hint_my_materials_empty_number">数量未知</string>
+    <string name="label_material_info_switcher_my_materials">我的材料</string>
+    <string name="label_material_info_switcher_query_materials">我的申请</string>
+    <string name="label_material_info_query_material_item_code_label">编号：</string>
+</resources>

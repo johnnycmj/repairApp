@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_titlebar" />
+
+    <include layout="@layout/listview_header_query_material" />
+
+    <ListView
+        android:listSelector="@drawable/common_list_selector"
+        android:id="@+id/query_material_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/info_list_item_bg"
+        android:divider="@drawable/query_material_list_divider"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+</LinearLayout>

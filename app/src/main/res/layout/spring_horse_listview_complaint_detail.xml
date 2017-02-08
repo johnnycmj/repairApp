@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="14dp" >
+
+        <TextView
+            android:id="@+id/complaint_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#844310"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/complaint_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#ba8e60"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:paddingBottom="13dp"
+        android:id="@+id/complaint_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ba8e60"
+        android:textSize="14sp" />
+    
+    
+
+</LinearLayout>

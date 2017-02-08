@@ -1,0 +1,179 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <com.wutong.common.widget.HorizontalSmoothScrollView
+            android:id="@+id/repair_order_detail_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/repair_order_detail_scroll_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10.5dp"
+                    android:paddingTop="10.5dp" >
+
+                    <include layout="@layout/subpage_repair_order_detail" />
+
+                    <include layout="@layout/subpage_repair_order_status" />
+                    <!-- 拍照 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/take_photos"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_marginRight="49dp"
+                            android:layout_marginTop="9dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/photo_take_selector"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- 煤矿验收、返修等 -->
+
+                <LinearLayout
+                    android:id="@+id/repair_order_detail_fast_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginTop="3.5dp"
+                    android:visibility="gone"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:orientation="horizontal" >
+
+                        <RadioGroup
+                            android:id="@+id/repair_order_detail_fast_group"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <RadioButton
+                                android:checked="true"
+                                android:id="@+id/repair_order_detail_fast_query_accept"
+                                style="@style/widget_radio"
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_marginBottom="19dp"
+                                android:layout_marginTop="5dp" />
+
+                            <RadioButton
+                                android:id="@+id/repair_order_detail_fast_reback"
+                                style="@style/widget_radio"
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_marginTop="5dp" />
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="36dp"
+                                android:layout_marginBottom="18dp"
+                                android:ellipsize="none"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="@string/label_activity_repair_order_detail_check_and_accetp"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="36dp"
+                                android:ellipsize="none"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="@string/label_activity_repair_order_detail_reback"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/repair_order_detail_fast_assess_select"
+                                android:layout_width="126dp"
+                                android:layout_height="36dp"
+                                android:layout_marginBottom="14dp"
+                                android:background="@drawable/select_bg_selector"
+                                android:gravity="center_vertical"
+                                android:hint="@string/hint_activity_repair_order_detail_evulation"
+                                android:paddingLeft="8dp"
+                                android:textColor="#363231"
+                                android:textColorHint="#363231"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/repair_order_detail_fast_reback_reason_input"
+                                android:layout_width="fill_parent"
+                                android:layout_height="96dp"
+                                android:background="@drawable/edittext_backgroud"
+                                android:gravity="top"
+                                android:hint="@string/hint_activity_repair_order_detail_reback"
+                                android:inputType="textMultiLine"
+                                android:lines="4"
+                                android:paddingBottom="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="8dp"
+                                android:textColor="#333333"
+                                android:textColorHint="#c6c6c6"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.wutong.common.widget.HorizontalSmoothScrollView>
+    </LinearLayout>
+
+</FrameLayout>

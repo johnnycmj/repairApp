@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="guide_key_for_new_function_introduction_with_micro_share">new_function_micro_share_is_tips_shown</string>
+    <string name="guide_key_for_applicant_repair_and_person_info_change_introduction">applicant_repair_and_person_info_change_is_tips_shown</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.wutong.common.widget.PullToRefreshView
+        android:id="@+id/repair_order_single"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/repair_order_single_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10.5dp"
+                    android:paddingTop="10.5dp" >
+
+                    <include layout="@layout/subpage_repair_order_detail" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.wutong.common.widget.PullToRefreshView>
+
+    <com.wutong.common.widget.PullToRefreshView
+        android:id="@+id/grid_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/grid_empty"
+            layout="@layout/empty_repair_order_collection" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.wutong.common.widget.GridViewInnerScroll
+                    android:id="@+id/grid_repair_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="8dp"
+                    android:numColumns="2"
+                    android:listSelector="@drawable/common_list_selector"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:verticalSpacing="8dp"
+                    android:visibility="visible" />
+
+                <include layout="@layout/footer_repair_order_not_accept" />
+            </LinearLayout>
+        </ScrollView>
+    </com.wutong.common.widget.PullToRefreshView>
+
+</LinearLayout>

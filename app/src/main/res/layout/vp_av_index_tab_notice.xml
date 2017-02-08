@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:contentDescription="@null"
+            android:src="#b6babf" />
+
+        <com.wutong.common.widget.PullToRefreshView
+            android:id="@+id/notice_list_pull_refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="15sp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/notice_list_empty"
+                layout="@layout/empty_notice_list" />
+
+            <ListView
+                android:listSelector="@drawable/common_list_selector"
+                android:id="@+id/notice_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="8dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+        </com.wutong.common.widget.PullToRefreshView>
+    </LinearLayout>
+
+</FrameLayout>

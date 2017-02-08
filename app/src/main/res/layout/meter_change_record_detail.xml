@@ -1,0 +1,313 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="#eeeeee" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 表信息 -->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginRight="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/info_list_item_bg"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="112dp"
+                            android:background="@drawable/meter_aditer_info_bg"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="35dp"
+                                android:layout_marginTop="30dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/meter_record_building_or_owner"
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/icon_lou"
+                                    android:drawablePadding="8dp"
+                                    android:ellipsize="none"
+                                    android:ems="4"
+                                    android:singleLine="true"
+                                    android:textColor="#e35c49"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/meter_record_building_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:textColor="#e35c49"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="35dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/meter_record_meter_name"
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/icon_shuibiao"
+                                    android:drawablePadding="8dp"
+                                    android:ellipsize="none"
+                                    android:ems="4"
+                                    android:singleLine="true"
+                                    android:textColor="#6dbac5"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/meter_record_meter_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:textColor="#6dbac5"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- 修改区域 -->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:text="@string/label_meter_change_record_last_value"
+                                    android:textColor="#eb9288"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/meter_record_last_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="28dp"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:textColor="#333333"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:text="@string/label_meter_change_record_current_value"
+                                    android:textColor="#eb9288"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:imeOptions="actionNext"
+                                    android:paddingLeft="8dp"
+                                    android:id="@+id/meter_record_current_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="43dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="53dp"
+                                    android:background="@drawable/edittext_backgroud"
+                                    android:ellipsize="none"
+                                    android:inputType="numberDecimal"
+                                    android:singleLine="true"
+                                    android:textColor="#333333"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:text="@string/label_meter_change_record_multiple"
+                                    android:textColor="#eb9288"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/meter_record_multiple"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="28dp"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:textColor="#333333"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:text="@string/label_meter_change_record_real_value"
+                                    android:textColor="#eb9288"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:imeOptions="actionNext"
+                                    android:paddingLeft="8dp"
+                                    android:id="@+id/meter_record_real_value"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="43dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="53dp"
+                                    android:background="@drawable/edittext_backgroud"
+                                    android:ellipsize="none"
+                                    android:inputType="numberDecimal"
+                                    android:singleLine="true"
+                                    android:textColor="#333333"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:text="@string/label_meter_change_record_single_price"
+                                    android:textColor="#eb9288"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/meter_record_single_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="28dp"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:textColor="#333333"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:text="@string/label_meter_change_record_total_price"
+                                    android:textColor="#eb9288"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:imeOptions="actionDone"
+                                    android:paddingLeft="8dp"
+                                    android:id="@+id/meter_record_total_price"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="43dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="53dp"
+                                    android:background="@drawable/edittext_backgroud"
+                                    android:ellipsize="none"
+                                    android:inputType="numberDecimal"
+                                    android:singleLine="true"
+                                    android:textColor="#333333"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

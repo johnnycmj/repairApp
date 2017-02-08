@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_bg"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <LinearLayout
+            android:id="@+id/page_repair_switcher_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/modular_repair_page_switchers_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/page_repair_switcher_not_accept"
+                style="@style/textview_page_repair_switchers"
+                android:enabled="false"
+                android:text="@string/av_index_tab_label_modular_page_repair_switcher_not_accept" />
+
+            <TextView
+                android:id="@+id/page_repair_switcher_repairing"
+                style="@style/textview_page_repair_switchers"
+                android:text="@string/av_index_tab_label_modular_page_repair_switcher_repairing" />
+
+            <TextView
+                android:id="@+id/page_repair_switcher_finish"
+                style="@style/textview_page_repair_switchers"
+                android:text="@string/av_index_tab_label_modular_page_repair_switcher_finish" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_repair_order"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</FrameLayout>

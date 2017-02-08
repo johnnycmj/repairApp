@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.wutong.common.widget.PullToRefreshView
+        android:id="@+id/my_material_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/my_material_empty"
+            layout="@layout/empty_my_material" />
+
+        <ListView
+            android:id="@+id/material_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:listSelector="@drawable/common_list_selector"
+            android:background="@drawable/info_list_item_bg"
+            android:divider="@drawable/my_material_list_divider"
+            android:dividerHeight="1dp" />
+    </com.wutong.common.widget.PullToRefreshView>
+
+</LinearLayout>

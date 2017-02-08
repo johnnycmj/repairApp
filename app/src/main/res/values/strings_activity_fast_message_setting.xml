@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_fast_message_setting">快速回复</string>
+    <string name="hint__fast_message_input">请填写快速回复的内容</string>
+</resources>

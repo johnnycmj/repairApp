@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_menu_feedback_useful_expression_1" >您好，这个不属于我的维修范围，请帮我转发下单子吧。</string>
+    <string name="title_menu_feedback_useful_expression_2" >您好，最近单子比较多，请您耐心等待我们上门维修。</string>
+    <string name="title_menu_feedback_useful_expression_3" >您好，感谢您的评价，我们会继续努力做的更好。</string>
+    <string name="title_menu_feedback_useful_expression_4" >您好，最近生病了，不能及时给您维修。</string>
+    <string-array name="title_menu_feedback_useful_expression_array">
+        <item>@string/title_menu_feedback_useful_expression_1</item>
+        <item>@string/title_menu_feedback_useful_expression_2</item>
+        <item>@string/title_menu_feedback_useful_expression_3</item>
+        <item>@string/title_menu_feedback_useful_expression_4</item>
+    </string-array>
+</resources>

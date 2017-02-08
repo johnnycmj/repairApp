@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">师大微修</string>
+    <string name="app_flag">fjnu</string>
+    <string name="http_url_domain">http://hqwx.fjnu.edu.cn/RepairServer/</string>
+    <!-- 百度统计 -->
+    <string name="baidu_stat_app_key">b5445d35c6</string>
+    <!-- 渠道 -->
+    <string name="baidu_stat_app_channel">web_download</string>
+    <!-- jpush appkey -->
+    <string name="jpush_app_key">7f042de44bc942952d7c4023</string>
+    <!--
+	||flag and domain
+	inner fjnu：http://121.40.134.169:8080/RepairServer/
+ 	fjnu：http://hqwx.fjnu.edu.cn/RepairServer/
+
+    -->
+
+
+    <!--
+ 	||统计appkey
+ 	开发：b5445d35c6
+ 	师大：d80de53ec1
+
+    -->
+
+
+    <!--
+    ||渠道
+    91：91 market
+    web端下载：web_download
+    baidu:Baidu Market
+    -->
+
+
+    <!--
+     ||jpush app key
+     后勤报修（开发测试）：f0276b475ffbb2fd81a357a7
+     师大报修：f3e67d1e92acc080cbd7b75d
+
+    -->
+
+
+    <!--
+      ||软件名称
+      师大报修：师大微修
+
+    -->
+
+</resources>

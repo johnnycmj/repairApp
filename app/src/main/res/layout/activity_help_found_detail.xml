@@ -1,0 +1,281 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="13dp"
+            android:layout_weight="99"
+            android:background="@drawable/spring_horse_grid_repair_order"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="12dp" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!-- 图片 -->
+
+                    <ImageView
+                        android:id="@+id/found_detail_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="182dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <!-- 名字 -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp" >
+
+                        <!-- 名字+时间 -->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="23dp"
+                                android:layout_marginTop="12dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/found_detail_writter_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="8dp"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:textColor="#844310"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="22dp"
+                                    android:background="@drawable/help_founder_tag_bg"
+                                    android:ellipsize="none"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="@string/help_found_detail_tag"
+                                    android:textColor="#fdfdfd"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:text="@string/help_found_detail_publish_time"
+                                    android:textColor="#ba8e60"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/found_detail_publish_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="8dp"
+                                    android:ellipsize="none"
+                                    android:singleLine="true"
+                                    android:textColor="#ba8e60"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/found_detail_dial_area"
+                            android:layout_width="73dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical|right" >
+
+                            <ImageView
+                                android:id="@+id/found_detail_dial_call_img"
+                                android:layout_width="39dp"
+                                android:layout_height="39dp"
+                                android:layout_marginRight="17dp"
+                                android:contentDescription="@null"
+                                android:src="@drawable/help_found_detail_dialg" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="72dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toLeftOf="@id/found_detail_dial_area"
+                            android:contentDescription="@null"
+                            android:src="@drawable/help_found_detail_dial_left_img" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@null"
+                        android:src="#32b8ad" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp" >
+
+                        <TextView
+                            android:id="@+id/found_detail_found_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:drawableLeft="@drawable/notice_icon_time"
+                            android:drawablePadding="8dp"
+                            android:ellipsize="none"
+                            android:singleLine="true"
+                            android:textColor="#844310"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/found_detail_item_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="16dp"
+                            android:drawableLeft="@drawable/icon_repair_order_order"
+                            android:drawablePadding="8dp"
+                            android:ellipsize="none"
+                            android:singleLine="true"
+                            android:textColor="#844310"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/found_detail_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:drawableLeft="@drawable/icon_repair_order_dorm"
+                        android:drawablePadding="8dp"
+                        android:ellipsize="none"
+                        android:singleLine="false"
+                        android:textColor="#844310"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/found_detail_lost_info_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:drawableLeft="@drawable/icon_student"
+                            android:drawablePadding="8dp"
+                            android:ellipsize="none"
+                            android:singleLine="true"
+                            android:text="@string/help_found_detail_loster_info"
+                            android:textColor="#844310"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/found_detail_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="40dp"
+                            android:ellipsize="none"
+                            android:singleLine="true"
+                            android:textColor="#32b8ad"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@null"
+                        android:src="#d8d8d8" />
+
+                    <TextView
+                        android:id="@+id/found_detail_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:drawablePadding="8dp"
+                        android:ellipsize="none"
+                        android:singleLine="false"
+                        android:textColor="#ba8e60"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/found_detail_finish"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/help_lost_or_found_finish_bg"
+            android:singleLine="true"
+            android:text="@string/help_lost_found_finish"
+            android:textColor="#eeeeee"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

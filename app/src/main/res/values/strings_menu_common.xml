@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_common_setting">设置</string>
+    <string name="menu_common_clean_cache">清空缓存</string>
+    <string name="menu_common_toggle_notice_service">开启或关闭通知服务</string>
+    <string name="menu_common_toggle_notice_service_open">开启通知服务</string>
+    <string name="menu_common_toggle_notice_service_close">关闭通知服务</string>
+    <string name="menu_common_exit">退出</string>
+    <string name="menu_common_logout">注销</string>
+    <string name="menu_common_help">使用帮助</string>
+</resources>

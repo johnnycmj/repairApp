@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head_titlebar" />
+
+    <include layout="@layout/header_room_asset" />
+
+    <include
+        android:id="@+id/room_asset_empty"
+        layout="@layout/empty_room_asset" />
+
+    <ListView
+        android:listSelector="@drawable/common_list_selector"
+        android:id="@+id/room_assets_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/info_list_item_bg"
+        android:divider="@drawable/room_asset_list_divider"
+        android:dividerHeight="1dp"
+        android:headerDividersEnabled="false" />
+
+</LinearLayout>

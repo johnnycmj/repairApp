@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/complaint_category_selector"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/complaint_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:textColor="#844310"
+        android:textSize="15sp" />
+
+</LinearLayout>

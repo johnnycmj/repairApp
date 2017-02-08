@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/info_list_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="13dp" >
+
+        <TextView
+            android:id="@+id/room_owner_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_repair_order_dorm"
+            android:drawablePadding="8dp"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/room_owner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_student"
+            android:drawablePadding="8dp"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <com.wutong.common.widget.ListViewInnerScroll
+        android:id="@+id/room_owner_meter_list"
+        android:layout_width="match_parent"
+        android:listSelector="@drawable/common_list_selector"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="8dp"
+        android:divider="#d8d8d8"
+        android:dividerHeight="0.5dp" />
+
+</LinearLayout>

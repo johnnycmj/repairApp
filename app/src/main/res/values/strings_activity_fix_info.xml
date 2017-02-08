@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_fix_info">维修信息</string>
+    <string name="label_fix_info_more">&#8230;</string>
+    <string name="label_fix_info_apply">耗材</string>
+    <string name="label_fix_info_start_to_deal">受理</string>
+    <string name="label_fix_info_feedback">反馈</string>
+    <string name="label_fix_info_complete">完成</string>
+    <string name="label_fix_info_room_asset">资产</string>
+    <string name="label_fix_info_refix_complete">完成</string>
+    <string name="label_fix_info_repair_code">报修单号</string>
+    <string name="label_fix_info_repair_status">报修状态</string>
+    <string name="label_fix_info_dorm_info">报修地点</string>
+    <string name="label_fix_info_contact_name">报修人员</string>
+    <string name="label_fix_info_contact_tel">联系电话</string>
+    <string name="label_fix_info_contact_tel_call">联系他/她</string>
+    <string name="label_fix_info_asset_name">报修类型</string>
+    <string name="label_fix_info_trouble_name">报修项目</string>
+    <string name="label_fix_info_other_trouble_name">备注信息</string>
+    <string name="label_fix_info_start_time">报修时间</string>
+    <string name="label_fix_info_accept_time">受理时间</string>
+    <string name="label_fix_info_end_time">完成时间</string>
+    <string name="label_fix_info_feedback_count">反馈信息</string>
+    <string name="label_fix_info_propose_photos">报修拍照</string>
+    <string name="label_fix_info_fix_photos">维修拍照</string>
+    <string name="label_fix_info_fix_photos_more">查看</string>
+    <string name="label_fix_info_propose_photos_more">查看</string>
+    <string name="label_fix_info_take_photos">拍照</string>
+    <string name="label_fix_info_room_asset_info">资产信息</string>
+    <string name="label_fix_info_thumb_image_info">图片信息</string>
+    <string name="label_fix_info_material_info">耗材信息</string>
+    <string name="label_fix_info_is_make_anpointment">是否预约维修时间</string>
+</resources>

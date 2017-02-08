@@ -1,0 +1,224 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/window_frame_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/labor_common_bg_bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_titlebar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dorm_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="23dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="47dp"
+                    android:drawableLeft="@drawable/icon_sstz_ss"
+                    android:drawablePadding="7dp"
+                    android:ellipsize="none"
+                    android:includeFontPadding="false"
+                    android:singleLine="false"
+                    android:textColor="#844310"
+                    android:textSize="18sp" />
+
+                <!-- 中间内容 -->
+
+                <LinearLayout
+                    android:id="@+id/change_dorm_status_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="23dp"
+                    android:background="@drawable/spring_horse_repair_order_detail"
+                    android:minHeight="303dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/dorm_apply_status_flag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="18dp"
+                            android:background="@drawable/sstz_lable_blue"
+                            android:ellipsize="none"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/dorm_apply_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginTop="27dp"
+                            android:ellipsize="none"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:singleLine="true"
+                            android:textColor="#ba8e60"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/dorm_info_pre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="18dp"
+                            android:layout_marginTop="33dp"
+                            android:ellipsize="none"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:singleLine="false"
+                            android:textColor="#ba8e60"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/dorm_op_change_apply"
+                            android:layout_width="59dp"
+                            android:layout_height="82dp"
+                            android:background="@drawable/sstz_bg_tz"
+                            android:drawablePadding="10dp"
+                            android:drawableTop="@drawable/icon_sstz_tz"
+                            android:ellipsize="none"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:singleLine="false"
+                            android:text="@string/fragment_dorm_change_status_op_change_apply"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/dorm_op_offset"
+                            android:layout_width="59dp"
+                            android:layout_height="82dp"
+                            android:background="@drawable/sstz_bg_gz"
+                            android:drawablePadding="10dp"
+                            android:drawableTop="@drawable/icon_sstz_gz"
+                            android:ellipsize="none"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:singleLine="false"
+                            android:text="@string/fragment_dorm_change_status_op_offset_to"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="18dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="26dp" >
+
+                            <TextView
+                                android:id="@+id/dorm_info_after"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="none"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:singleLine="false"
+                                android:textColor="#844310"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/dorm_info_status_icon"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:contentDescription="@null" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 空提示 -->
+
+                <LinearLayout
+                    android:id="@+id/change_dorm_empty_status_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="23dp"
+                    android:background="@drawable/spring_horse_repair_order_detail"
+                    android:gravity="center"
+                    android:minHeight="303dp"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="21dp"
+                        android:drawableTop="@drawable/icon_sstz_nomessage"
+                        android:ellipsize="none"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="@string/fragment_dorm_change_status_empty_status"
+                        android:textColor="#cdb197"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/change_dorm_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/spring_horse_append_material_normal"
+                    android:text="@string/fragment_dorm_change_status_btn_change_apply"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
