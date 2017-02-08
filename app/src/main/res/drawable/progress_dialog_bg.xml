@@ -10,5 +10,6 @@
 	<!-- android:color="@color/lightblue" -->
 	<stroke
 	    android:width="2dp"
+		android:color="#ADD8E6"
 	    />
 </shape>

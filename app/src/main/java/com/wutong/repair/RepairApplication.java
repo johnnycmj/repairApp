@@ -172,7 +172,11 @@ public class RepairApplication extends Application implements OnSharedPreference
 				}
 				
 				//去掉首页
-				if(!networkBean.getUrl().equals(getString(R.string.modular_url_hom_page))){
+				if(!networkBean.getUrl().equals(getString(R.string.modular_url_hom_page))
+						&& !networkBean.getUrl().equals(getString(R.string.modular_url_micro_share))
+						&& !networkBean.getUrl().equals(getString(R.string.modular_url_help_found_list))
+						&& !networkBean.getUrl().equals(getString(R.string.modular_url_help_lost))
+						&& !networkBean.getUrl().equals(getString(R.string.modular_url_my_publish_lost_or_found))){
 					modularNetworkBeanAllList.add(networkBean);
 				}
 				
@@ -201,6 +205,7 @@ public class RepairApplication extends Application implements OnSharedPreference
 	private void packModularMainAndExtra(){
 		int modularSize = modularNetworkBeanAllList.size();
 		if(modularSize >3){
+			modularNetworkBeanMainList.add(modularNetworkBeanAllList.remove(0));
 			modularNetworkBeanMainList.add(modularNetworkBeanAllList.remove(0));
 			modularNetworkBeanMainList.add(modularNetworkBeanAllList.remove(0));
 
