@@ -1,0 +1,1236 @@
+获取全部报修列表
+
+http://hqwx.fjnu.edu.cn/RepairServer/repairFormList/findAllRepairByStudent.action   其中formType =0
+获取公寓宿舍：
+http://hqwx.fjnu.edu.cn/RepairServer/repairFormList/findDorRepairFromListByStudent.action 其中formType =1
+获取公共室内：
+http://hqwx.fjnu.edu.cn/RepairServer/repairFormList/findPublicRoomRepairFormListByStudent.action 其中formType =2
+获取公共室外：
+http://hqwx.fjnu.edu.cn/RepairServer/repairFormList/findPublicOutRepairFormListByStudent.action  其中formType =3
+
+
+参数：
+未受理：hotelRoomId=5765&roomId=5765&userId=24133&formType=0&group=1&start=0&limit=20
+维修中：hotelRoomId=5765&roomId=5765&userId=24133&formType=0&group=2&start=0&limit=20
+已完成：hotelRoomId=5765&roomId=5765&userId=24133&formType=0&group=3&start=0&limit=20
+
+返回值：
+{
+	"message": "获取列表成功",
+	"data": [{
+		"address": "旗山笃行楼1 -- 李苑4-101",
+		"endTime": "2016-12-14 17:12",
+		"startTime": "2016-12-13 21:19",
+		"status": "4",
+		"feedbackCount": 0,
+		"repairFormId": 143443,
+		"formType": "1",
+		"itemPname": "阳台门",
+		"itemName": "其他",
+		"repairmanName": "毛文福",
+		"realName": "陈媛媛",
+		"repairNum": "BX20161213211908",
+		"acceptTime": "2016-12-14 08:25",
+		"statusName": "已确认",
+		"roomName": "李苑4-101",
+		"pictureCount": 0
+	},
+	{
+		"address": "旗山笃行楼1 -- 李苑4-101",
+		"endTime": "2016-12-05 17:37",
+		"startTime": "2016-12-03 17:03",
+		"status": "4",
+		"feedbackCount": 0,
+		"repairFormId": 141455,
+		"formType": "1",
+		"itemPname": "其他",
+		"itemName": "其他",
+		"repairmanName": "毛文福",
+		"realName": "王珍玉",
+		"repairNum": "BX20161203170334",
+		"acceptTime": "2016-12-05 08:40",
+		"statusName": "已确认",
+		"roomName": "李苑4-101",
+		"pictureCount": 0
+	},
+	{
+		"address": "旗山笃行楼1 -- 李苑4-101",
+		"endTime": "2016-12-05 17:38",
+		"startTime": "2016-12-03 17:01",
+		"status": "4",
+		"feedbackCount": 0,
+		"repairFormId": 141454,
+		"formType": "1",
+		"itemPname": "马桶",
+		"itemName": "坏了",
+		"repairmanName": "毛文福",
+		"realName": "王珍玉",
+		"repairNum": "BX20161203170120",
+		"acceptTime": "2016-12-05 08:41",
+		"statusName": "已确认",
+		"roomName": "李苑4-101",
+		"pictureCount": 0
+	}],
+	"success": true
+}
+
+
+点击详情：
+http://hqwx.fjnu.edu.cn/RepairServer/repairForm/repairFromDetail.action?repairFormId=143443
+
+{
+	"message": "查询成功",
+	"data": {
+		"endTime": "2016-12-14 17:12",
+		"startTime": "2016-12-13 21:19",
+		"status": "4",
+		"userName": "陈媛媛",
+		"applyPhone": "13400568065",
+		"feedbackCount": 0,
+		"assetsCount": 0,
+		"repairAssetsCount": 0,
+		"hotelRoomId": 5765,
+		"repairFormId": 143443,
+		"userId": 24021,
+		"userRepairmanId": 111540,
+		"formType": "1",
+		"itemPname": "阳台门",
+		"itemName": "其他",
+		"repairmanName": "毛文福",
+		"repairNum": "BX20161213211908",
+		"acceptTime": "2016-12-14 08:25",
+		"statusName": "已确认",
+		"detail": "阳台门拉不动。",
+		"roomName": "李苑4-101",
+		"pictureCount": 0
+	},
+	"success": true
+}
+
+获取报修图片
+http://hqwx.fjnu.edu.cn/RepairServer/repairPicture/findRepairPicture.action?formId=143443
+
+获取维修工：
+http://hqwx.fjnu.edu.cn/RepairServer/dispatching/getAllRepairMan.action
+{
+	"message": "获取列表成功",
+	"data": [{
+		"type": "水电",
+		"userId": 90000,
+		"repairManName": "维修部"
+	},
+	{
+		"type": "全能",
+		"userId": 90013,
+		"repairManName": "王命华"
+	},
+	{
+		"type": "全能",
+		"userId": 90014,
+		"repairManName": "郑发财"
+	},
+	{
+		"type": "土木",
+		"userId": 90022,
+		"repairManName": "修缮与水电服务中心"
+	},
+	{
+		"type": "保修",
+		"userId": 90027,
+		"repairManName": "郑艳"
+	},
+	{
+		"type": "全能",
+		"userId": 90030,
+		"repairManName": "仓山修缮与水电中心"
+	},
+	{
+		"type": "全能",
+		"userId": 104214,
+		"repairManName": "郑云"
+	},
+	{
+		"type": "全能",
+		"userId": 104215,
+		"repairManName": "林彬"
+	},
+	{
+		"type": "全能",
+		"userId": 104216,
+		"repairManName": "兰冬"
+	},
+	{
+		"type": "全能",
+		"userId": 104218,
+		"repairManName": "徐师师"
+	},
+	{
+		"type": "全能",
+		"userId": 104219,
+		"repairManName": "连春梅"
+	},
+	{
+		"type": "全能",
+		"userId": 104220,
+		"repairManName": "张志文"
+	},
+	{
+		"type": "全能",
+		"userId": 104221,
+		"repairManName": "张光富"
+	},
+	{
+		"type": "全能",
+		"userId": 111535,
+		"repairManName": "覃建设"
+	},
+	{
+		"type": "全能",
+		"userId": 111536,
+		"repairManName": "翁启开"
+	},
+	{
+		"type": "全能",
+		"userId": 111537,
+		"repairManName": "杨一斌"
+	},
+	{
+		"type": "全能",
+		"userId": 111538,
+		"repairManName": "余尔国"
+	},
+	{
+		"type": "全能",
+		"userId": 111539,
+		"repairManName": "覃志勇"
+	},
+	{
+		"type": "全能",
+		"userId": 111540,
+		"repairManName": "毛文福"
+	},
+	{
+		"type": "其他",
+		"userId": 200087,
+		"repairManName": "章星"
+	},
+	{
+		"type": "其他",
+		"userId": 200088,
+		"repairManName": "章星"
+	},
+	{
+		"type": "其他",
+		"userId": 200089,
+		"repairManName": "章星"
+	}],
+	"success": true
+}
+
+获取评价项目：
+http://hqwx.fjnu.edu.cn/RepairServer/assessType/getAssessType.action
+{
+	"message": "获取信息成功",
+	"data": [{
+		"assessTypeName": "满意",
+		"assessTypeCode": "1"
+	},
+	{
+		"assessTypeName": "一般",
+		"assessTypeCode": "2"
+	},
+	{
+		"assessTypeName": "不满意",
+		"assessTypeCode": "3"
+	}],
+	"success": true
+}
+
+
+报修：
+选择公寓宿舍：
+保修类型：
+http://hqwx.fjnu.edu.cn/RepairServer/itemInfo/findPItem.action?itemType=1&hotelRoomId=5765
+{
+	"message": "查询成功",
+	"data": [{
+		"itemName": "热水器",
+		"itemId": 1
+	},
+	{
+		"itemName": "空调",
+		"itemId": 2
+	},
+	{
+		"itemName": "洗衣池水龙头",
+		"itemId": 3
+	},
+	{
+		"itemName": "马桶",
+		"itemId": 4
+	},
+	{
+		"itemName": "阳台下水道",
+		"itemId": 5
+	},
+	{
+		"itemName": "洗手盆",
+		"itemId": 6
+	},
+	{
+		"itemName": "洗衣池",
+		"itemId": 7
+	},
+	{
+		"itemName": "窗户",
+		"itemId": 8
+	},
+	{
+		"itemName": "大门",
+		"itemId": 9
+	},
+	{
+		"itemName": "床",
+		"itemId": 10
+	},
+	{
+		"itemName": "椅子",
+		"itemId": 11
+	},
+	{
+		"itemName": "玻璃",
+		"itemId": 12
+	},
+	{
+		"itemName": "电风扇",
+		"itemId": 13
+	},
+	{
+		"itemName": "宿舍日光灯",
+		"itemId": 14
+	},
+	{
+		"itemName": "阳台节能灯",
+		"itemId": 15
+	},
+	{
+		"itemName": "冲水阀",
+		"itemId": 17
+	},
+	{
+		"itemName": "桌子",
+		"itemId": 174
+	},
+	{
+		"itemName": "衣柜",
+		"itemId": 177
+	},
+	{
+		"itemName": "插座",
+		"itemId": 180
+	},
+	{
+		"itemName": "地漏",
+		"itemId": 183
+	},
+	{
+		"itemName": "软管",
+		"itemId": 186
+	},
+	{
+		"itemName": "水管",
+		"itemId": 189
+	},
+	{
+		"itemName": "水箱",
+		"itemId": 193
+	},
+	{
+		"itemName": "铝合金窗户",
+		"itemId": 223
+	},
+	{
+		"itemName": "洗手盆水龙头",
+		"itemId": 226
+	},
+	{
+		"itemName": "浴室下水道",
+		"itemId": 230
+	},
+	{
+		"itemName": "厕所节能灯",
+		"itemId": 233
+	},
+	{
+		"itemName": "阳台门",
+		"itemId": 237
+	},
+	{
+		"itemName": "厕所门",
+		"itemId": 242
+	},
+	{
+		"itemName": "公共区域",
+		"itemId": 538
+	},
+	{
+		"itemName": "墙壁漏水",
+		"itemId": 541
+	},
+	{
+		"itemName": "墙壁掉灰",
+		"itemId": 542
+	},
+	{
+		"itemName": "淋浴管",
+		"itemId": 553
+	},
+	{
+		"itemName": "洗衣池下水管",
+		"itemId": 557
+	},
+	{
+		"itemName": "洗手盆下水管",
+		"itemId": 561
+	},
+	{
+		"itemName": "其他",
+		"itemId": 569
+	},
+	{
+		"itemName": "天花板漏水",
+		"itemId": 571
+	}],
+	"success": true
+}
+报修项目：
+http://hqwx.fjnu.edu.cn/RepairServer/itemInfo/findItem.action?pid=1
+{
+	"message": "查询成功",
+	"data": [{
+		"itemName": "不热",
+		"itemId": 20
+	},
+	{
+		"itemName": "喷头坏了",
+		"itemId": 21
+	},
+	{
+		"itemName": "不通电",
+		"itemId": 22
+	},
+	{
+		"itemName": "软管漏水",
+		"itemId": 551
+	},
+	{
+		"itemName": "其他",
+		"itemId": 552
+	}],
+	"success": true
+}
+
+查询本宿舍是否有同类报修：
+http://hqwx.fjnu.edu.cn/RepairServer/repairForm/isExitRepairForm.action?hotelRoomId=5765&itemPId=1&itemId=20
+{
+	"message": "查询成功",
+	"data": 0,
+	"success": true
+}
+
+公共室内：
+获取报修建筑：
+http://hqwx.fjnu.edu.cn/RepairServer/buildingRoom/findPublicBuilding.action
+
+报修房间：
+
+报修类型：
+http://hqwx.fjnu.edu.cn/RepairServer/itemInfo/findPItem.action?itemType=2&hotelRoomId=5765
+
+{
+	"message": "查询成功",
+	"data": [{
+		"itemName": "走廊灯",
+		"itemId": 68
+	},
+	{
+		"itemName": "消防栓",
+		"itemId": 69
+	},
+	{
+		"itemName": "灭火器",
+		"itemId": 70
+	},
+	{
+		"itemName": "墙壁",
+		"itemId": 71
+	},
+	{
+		"itemName": "天花板",
+		"itemId": 72
+	},
+	{
+		"itemName": "日光灯",
+		"itemId": 73
+	},
+	{
+		"itemName": "窗户",
+		"itemId": 74
+	},
+	{
+		"itemName": "门",
+		"itemId": 75
+	},
+	{
+		"itemName": "桌子",
+		"itemId": 76
+	},
+	{
+		"itemName": "椅子",
+		"itemId": 77
+	},
+	{
+		"itemName": "电梯",
+		"itemId": 78
+	},
+	{
+		"itemName": "吊顶",
+		"itemId": 79
+	},
+	{
+		"itemName": "玻璃",
+		"itemId": 80
+	},
+	{
+		"itemName": "其他",
+		"itemId": 81
+	},
+	{
+		"itemName": "水池",
+		"itemId": 196
+	},
+	{
+		"itemName": "水龙头",
+		"itemId": 199
+	},
+	{
+		"itemName": "下水道",
+		"itemId": 203
+	}],
+	"success": true
+}
+
+公共室外：
+获取报修街道：
+http://hqwx.fjnu.edu.cn/RepairServer//buildingRoom/findPublicOutStreet.action
+{
+	"message": "获取信息成功",
+	"data": [{
+		"buildingId": 1,
+		"buildingName": "旗山校区龙江北路"
+	},
+	{
+		"buildingId": 2,
+		"buildingName": "旗山校区桃李路"
+	},
+	{
+		"buildingId": 3,
+		"buildingName": "旗山校区仓山大道"
+	},
+	{
+		"buildingId": 4,
+		"buildingName": "旗山校区明德路"
+	},
+	{
+		"buildingId": 5,
+		"buildingName": "旗山校区龙江中路"
+	},
+	{
+		"buildingId": 6,
+		"buildingName": "旗山校区桂榕路"
+	},
+	{
+		"buildingId": 7,
+		"buildingName": "旗山校区海疆路"
+	},
+	{
+		"buildingId": 8,
+		"buildingName": "旗山校区协和路"
+	},
+	{
+		"buildingId": 9,
+		"buildingName": "旗山校区格致路"
+	},
+	{
+		"buildingId": 10,
+		"buildingName": "旗山校区行笃路"
+	},
+	{
+		"buildingId": 11,
+		"buildingName": "旗山校区致广北路"
+	},
+	{
+		"buildingId": 12,
+		"buildingName": "旗山校区旗山大道"
+	},
+	{
+		"buildingId": 13,
+		"buildingName": "旗山校区致广南路"
+	},
+	{
+		"buildingId": 14,
+		"buildingName": "旗山校区知明路"
+	},
+	{
+		"buildingId": 15,
+		"buildingName": "旗山校区溪源路"
+	},
+	{
+		"buildingId": 16,
+		"buildingName": "旗山校区立诚路"
+	},
+	{
+		"buildingId": 17,
+		"buildingName": "旗山校区龙江南路"
+	},
+	{
+		"buildingId": 18,
+		"buildingName": "旗山校区英华路"
+	},
+	{
+		"buildingId": 19,
+		"buildingName": "旗山校区六艺路"
+	},
+	{
+		"buildingId": 20,
+		"buildingName": "旗山校区华南西路"
+	},
+	{
+		"buildingId": 21,
+		"buildingName": "旗山校区兰馨路"
+	},
+	{
+		"buildingId": 22,
+		"buildingName": "旗山校区遊艺路"
+	},
+	{
+		"buildingId": 23,
+		"buildingName": "旗山校区法政路"
+	},
+	{
+		"buildingId": 24,
+		"buildingName": "旗山校区优师东路"
+	},
+	{
+		"buildingId": 25,
+		"buildingName": "旗山校区优师西路"
+	},
+	{
+		"buildingId": 26,
+		"buildingName": "旗山校区华南东路"
+	},
+	{
+		"buildingId": 27,
+		"buildingName": "旗山校区星槎桥"
+	},
+	{
+		"buildingId": 28,
+		"buildingName": "旗山校区星步桥"
+	},
+	{
+		"buildingId": 29,
+		"buildingName": "旗山校区星苑桥"
+	},
+	{
+		"buildingId": 30,
+		"buildingName": "旗山校区星晖桥"
+	},
+	{
+		"buildingId": 31,
+		"buildingName": "旗山校区科技路"
+	},
+	{
+		"buildingId": 32,
+		"buildingName": "旗山校区学园南路"
+	},
+	{
+		"buildingId": 33,
+		"buildingName": "其他"
+	},
+	{
+		"buildingId": 34,
+		"buildingName": "仓山校区长安大道"
+	},
+	{
+		"buildingId": 35,
+		"buildingName": "仓山校区长安东路"
+	},
+	{
+		"buildingId": 36,
+		"buildingName": "仓山校区长安中路"
+	},
+	{
+		"buildingId": 37,
+		"buildingName": "仓山校区长安南路"
+	},
+	{
+		"buildingId": 38,
+		"buildingName": "仓山校区长乐中路"
+	},
+	{
+		"buildingId": 39,
+		"buildingName": "仓山校区公园路"
+	},
+	{
+		"buildingId": 40,
+		"buildingName": "仓山校区青华路"
+	},
+	{
+		"buildingId": 41,
+		"buildingName": "仓山校区公园西路"
+	},
+	{
+		"buildingId": 42,
+		"buildingName": "其他"
+	}],
+	"success": true
+}
+获取标志性的建筑物：
+http://hqwx.fjnu.edu.cn/RepairServer/buildingRoom/findPublicOutLandmark.action?streetId=1
+{
+	"message": "获取信息成功",
+	"data": [{
+		"buildingId": 136,
+		"buildingName": "旗山校区北门"
+	},
+	{
+		"buildingId": 139,
+		"buildingName": "其他"
+	}],
+	"success": true
+}
+
+获取报修类型：
+http://hqwx.fjnu.edu.cn/RepairServer/itemInfo/findPItem.action?itemType=3&hotelRoomId=5765
+{
+	"message": "查询成功",
+	"data": [{
+		"itemName": "路灯",
+		"itemId": 116
+	},
+	{
+		"itemName": "水龙头",
+		"itemId": 117
+	},
+	{
+		"itemName": "垃圾桶",
+		"itemId": 118
+	},
+	{
+		"itemName": "消防栓",
+		"itemId": 119
+	},
+	{
+		"itemName": "广告牌",
+		"itemId": 120
+	},
+	{
+		"itemName": "宣传栏",
+		"itemId": 121
+	},
+	{
+		"itemName": "其他",
+		"itemId": 122
+	},
+	{
+		"itemName": "电气线路",
+		"itemId": 139
+	},
+	{
+		"itemName": "房屋",
+		"itemId": 140
+	},
+	{
+		"itemName": " 墙壁",
+		"itemId": 141
+	},
+	{
+		"itemName": "地面",
+		"itemId": 142
+	},
+	{
+		"itemName": "污水",
+		"itemId": 143
+	},
+	{
+		"itemName": "室外管道",
+		"itemId": 144
+	},
+	{
+		"itemName": "水管",
+		"itemId": 145
+	},
+	{
+		"itemName": "公共设施损坏",
+		"itemId": 146
+	},
+	{
+		"itemName": "下水道",
+		"itemId": 206
+	}],
+	"success": true
+}
+
+报修：
+http://hqwx.fjnu.edu.cn/RepairServer/repairFormInfo/save.action
+
+参数：userId=24133&markId=5765&itemPId=7&itemId=38&detail=&repairType=1   公寓宿舍：repairType=1  ，公共室内repairType=2  公司室外repairType=3
+
+返回：{
+	"message": "增加成功",
+	"data": 148050,
+	"success": true
+}
+
+
+
+
+
+获取建议：
+http://hqwx.fjnu.edu.cn/RepairServer/messageBoard/findMessageBoardList.action?start=0&limit=20&userId=24133&userType=
+
+获取公告：
+http://hqwx.fjnu.edu.cn/RepairServer/notice/findNoticeList.action?userId=24133&start=0&limit=20
+
+{
+	"message": "查询成功",
+	"data": [{
+		"date": "2016-09-02",
+		"status": "1",
+		"author": "学生公寓管理中心",
+		"typeId": 1,
+		"noticeTitle": "关于宿舍调整的报修通知",
+		"noticeId": 115,
+		"noticeContent": "同学们，由于新学期宿舍搬迁，微修系统的地址信息和实际宿舍号不一致，请大家在报修时在详细问题中备注新的宿舍信息，提高维修效率。同时，中心也在对系统信息紧张升级中，在此期间给同学们造成不便，请见谅。",
+		"isRead": "0",
+		"noticeTypeName": "一般"
+	},
+	{
+		"date": "2016-06-12",
+		"status": "1",
+		"author": "学生公寓管理中心",
+		"typeId": 1,
+		"noticeTitle": "关于宿舍掉灰和洗衣池改造中标公告",
+		"noticeId": 114,
+		"noticeContent": "http://www.fjbid.gov.cn/qtzbgg/zbgg/201606/t20160608_188630.htm",
+		"isRead": "0",
+		"noticeTypeName": "一般"
+	}],
+	"success": true
+}
+
+检查更新：
+http://hqwx.fjnu.edu.cn/RepairServer/versionUpdate/getVersionUpadte.action?schoolType=fjnu&platform=1
+{
+	"message": "查询成功",
+	"data": {
+		"log": "修改登入页面",
+		"status": "1",
+		"platform": "1",
+		"versionName": "2.0.4",
+		"versionCode": "8",
+		"schoolType": "fjnu",
+		"mustUpdateVersions": "",
+		"url": "http://hqwx.fjnu.edu.cn/download/repair/baoxiu_android.apk",
+		"versionId": 1
+	},
+	"success": true
+}
+
+
+密码修改：
+http://hqwx.fjnu.edu.cn/RepairServer/personInfo/editPwd.action?userId=24133&pwd=14e1b600b1fd579f47433b88e8d85291&newPwd=14e1b600b1fd579f47433b88e8d85291
+
+{"message":"修改成功","data":"1","success":true}
+
+更换手机：
+http://hqwx.fjnu.edu.cn/RepairServer/personInfo/updateStudentPhone.action?userId=24133&phone=15506918686
+
+{"message":"更新成功","success":true}
+
+
+
+
+后勤领导：
+工作台：
+维修：
+http://hqwx.fjnu.edu.cn/RepairServer/repairFormStatistics/getRepairFormStatistics.action?userId=90007
+
+{
+	"message": "获取成功",
+	"data": {
+		"yearRepair": {
+			"time": "2017年",
+			"dealRepair": 1494,
+			"totalRepair": 1662,
+			"finishCount": 1302
+		},
+		"weekRepair": {
+			"time": "02月13日-02月19日",
+			"dealRepair": 1,
+			"totalRepair": 37,
+			"finishCount": 0
+		},
+		"todayRepair": {
+			"time": "2017年02月14日",
+			"dealRepair": 1,
+			"totalRepair": 6,
+			"finishCount": 0
+		},
+		"monthRepair": {
+			"time": "2/2017",
+			"noAccept": 64,
+			"totalRepair": 69,
+			"beRepair": 0
+		}
+	},
+	"success": true
+}
+
+材料：
+http://hqwx.fjnu.edu.cn/RepairServer/assessStatistic/getAssestStatisticByLimit.action?condition=&start=0&limit=20&dir=1&userId=90007&order=2   dir=1 使用量降序：dir=2 使用量升序   order =0 库存量降序 order =1 库存量升序
+
+{
+	"message": "获取信息成功",
+	"data": [{
+		"type": "2",
+		"count": 0,
+		"monthUsedCount": 0,
+		"usedCount": 0,
+		"assetsName": "水龙头",
+		"assetsId": 3,
+		"brand": "永丰牌",
+		"specification": "s456",
+		"unit": "个",
+		"remark": "",
+		"stockCount": 0
+	},
+	{
+		"type": "2",
+		"count": 0,
+		"monthUsedCount": 0,
+		"usedCount": 0,
+		"assetsName": "日光灯",
+		"assetsId": 13,
+		"brand": "天力",
+		"specification": "Q231",
+		"unit": "根",
+		"remark": "",
+		"stockCount": 0
+	},
+	{
+		"type": "2",
+		"count": 0,
+		"monthUsedCount": 0,
+		"usedCount": 0,
+		"assetsName": "水管",
+		"assetsId": 4,
+		"brand": "永丰",
+		"specification": "h123",
+		"unit": "根",
+		"remark": "",
+		"stockCount": 0
+	},
+	{
+		"type": "2",
+		"count": 0,
+		"monthUsedCount": 0,
+		"usedCount": 0,
+		"assetsName": "开关",
+		"assetsId": 19,
+		"brand": "永丰牌",
+		"specification": "s456",
+		"unit": "个",
+		"remark": "",
+		"stockCount": 0
+	},
+	{
+		"type": "2",
+		"count": 0,
+		"monthUsedCount": 0,
+		"usedCount": 0,
+		"assetsName": "膨胀螺丝",
+		"assetsId": 7,
+		"brand": "永丰",
+		"specification": "P189",
+		"unit": "个",
+		"remark": "",
+		"stockCount": 0
+	},
+	{
+		"type": "2",
+		"count": 0,
+		"monthUsedCount": 0,
+		"usedCount": 0,
+		"assetsName": "插座",
+		"assetsId": 21,
+		"brand": "子弹头",
+		"specification": "009",
+		"unit": "个",
+		"remark": "",
+		"stockCount": 0
+	},
+	{
+		"type": "2",
+		"count": 0,
+		"monthUsedCount": 0,
+		"usedCount": 0,
+		"assetsName": "水泵",
+		"assetsId": 12,
+		"brand": "天风",
+		"specification": "Q123",
+		"unit": "根",
+		"remark": "",
+		"stockCount": 0
+	}],
+	"success": true
+}
+
+人员：
+http://hqwx.fjnu.edu.cn/RepairServer/repairManStatistic/getRepairStatistic.action?start=0&limit=20&userId=90007
+
+{
+	"message": "获取信息成功",
+	"data": [{
+		"dealCount": 0,
+		"noAcceptCount": 3,
+		"monthCount": 0,
+		"userId": 90000,
+		"repairManName": "维修部"
+	},
+	{
+		"dealCount": 4,
+		"noAcceptCount": 1,
+		"monthCount": 4,
+		"userId": 90013,
+		"repairManName": "王命华"
+	},
+	{
+		"dealCount": 19,
+		"noAcceptCount": 13,
+		"monthCount": 0,
+		"userId": 90014,
+		"repairManName": "郑发财"
+	},
+	{
+		"dealCount": 114,
+		"noAcceptCount": 629,
+		"monthCount": 0,
+		"userId": 90022,
+		"repairManName": "修缮与水电服务中心"
+	},
+	{
+		"dealCount": 15,
+		"noAcceptCount": 0,
+		"monthCount": 0,
+		"userId": 90027,
+		"repairManName": "郑艳"
+	},
+	{
+		"dealCount": 7,
+		"noAcceptCount": 16,
+		"monthCount": 0,
+		"userId": 90030,
+		"repairManName": "仓山修缮与水电中心"
+	},
+	{
+		"dealCount": 0,
+		"noAcceptCount": 0,
+		"monthCount": 0,
+		"userId": 104214,
+		"repairManName": "郑云"
+	},
+	{
+		"dealCount": 0,
+		"noAcceptCount": 0,
+		"monthCount": 0,
+		"userId": 104215,
+		"repairManName": "林彬"
+	},
+	{
+		"dealCount": 0,
+		"noAcceptCount": 0,
+		"monthCount": 0,
+		"userId": 104216,
+		"repairManName": "兰冬"
+	},
+	{
+		"dealCount": 103,
+		"noAcceptCount": 0,
+		"monthCount": 0,
+		"userId": 104218,
+		"repairManName": "徐师师"
+	},
+	{
+		"dealCount": 0,
+		"noAcceptCount": 3,
+		"monthCount": 0,
+		"userId": 104219,
+		"repairManName": "连春梅"
+	},
+	{
+		"dealCount": 0,
+		"noAcceptCount": 15,
+		"monthCount": 0,
+		"userId": 104220,
+		"repairManName": "张志文"
+	},
+	{
+		"dealCount": 6,
+		"noAcceptCount": 13,
+		"monthCount": 0,
+		"userId": 104221,
+		"repairManName": "张光富"
+	},
+	{
+		"dealCount": 1120,
+		"noAcceptCount": 74,
+		"monthCount": 0,
+		"userId": 111535,
+		"repairManName": "覃建设"
+	},
+	{
+		"dealCount": 17,
+		"noAcceptCount": 14,
+		"monthCount": 0,
+		"userId": 111536,
+		"repairManName": "翁启开"
+	},
+	{
+		"dealCount": 0,
+		"noAcceptCount": 12,
+		"monthCount": 0,
+		"userId": 111537,
+		"repairManName": "杨一斌"
+	},
+	{
+		"dealCount": 822,
+		"noAcceptCount": 77,
+		"monthCount": 0,
+		"userId": 111538,
+		"repairManName": "余尔国"
+	},
+	{
+		"dealCount": 0,
+		"noAcceptCount": 18,
+		"monthCount": 0,
+		"userId": 111539,
+		"repairManName": "覃志勇"
+	},
+	{
+		"dealCount": 0,
+		"noAcceptCount": 9,
+		"monthCount": 0,
+		"userId": 111540,
+		"repairManName": "毛文福"
+	},
+	{
+		"dealCount": 0,
+		"noAcceptCount": 0,
+		"monthCount": 0,
+		"userId": 200087,
+		"repairManName": "章星"
+	}],
+	"success": true
+}
+
+维修工维修单：
+http://hqwx.fjnu.edu.cn/RepairServer/repairFormList/findAllRepairByRepairManOnWorkBreach.action
+
+参数：
+未受理：userId=90013&formType=0&group=1&start=0&limit=20
+维修中: userId=90013&formType=0&group=2&start=0&limit=20
+已完成：userId=90013&formType=0&group=3&start=0&limit=20
+
+{
+	"message": "获取列表成功",
+	"data": [{
+		"address": "仓山15# -- 15#813",
+		"endTime": "昨天 18:20",
+		"startTime": "前天 21:34",
+		"status": "3",
+		"feedbackCount": 0,
+		"repairFormId": 148014,
+		"formType": "1",
+		"itemPname": "宿舍日光灯",
+		"itemName": "不亮",
+		"repairmanName": "王命华",
+		"realName": "陈奶寿",
+		"repairNum": "BX20170212213418",
+		"acceptTime": "昨天 10:08",
+		"statusName": "已维修",
+		"roomName": "15#813",
+		"pictureCount": 0
+	},
+	{
+		"address": "仓山培训D#学生宿舍 -- 培训D#306",
+		"endTime": "昨天 09:31",
+		"startTime": "02-10 09:57",
+		"status": "3",
+		"feedbackCount": 0,
+		"repairFormId": 148002,
+		"formType": "1",
+		"itemPname": "热水器",
+		"itemName": "不热",
+		"repairmanName": "王命华",
+		"realName": "李广坡",
+		"repairNum": "BX20170210095736",
+		"acceptTime": "昨天 09:31",
+		"statusName": "已维修",
+		"roomName": "培训D#306",
+		"pictureCount": 0
+	},
+	{
+		"address": "仓山15# -- 15#819",
+		"endTime": "昨天 18:20",
+		"startTime": "02-08 08:24",
+		"status": "3",
+		"feedbackCount": 0,
+		"repairFormId": 147997,
+		"formType": "1",
+		"itemPname": "电表",
+		"itemName": "坏了",
+		"repairmanName": "王命华",
+		"realName": "孔令峰",
+		"repairNum": "BX20170208082430",
+		"acceptTime": "昨天 10:08",
+		"statusName": "已维修",
+		"roomName": "15#819",
+		"pictureCount": 0
+	},
+	{
+		"address": "仓山培训D#学生宿舍 -- 培训D#508",
+		"endTime": "昨天 18:20",
+		"startTime": "02-07 15:56",
+		"status": "3",
+		"feedbackCount": 0,
+		"repairFormId": 147994,
+		"formType": "1",
+		"itemPname": "其他",
+		"itemName": "其他",
+		"repairmanName": "王命华",
+		"realName": "邓翠",
+		"repairNum": "BX20170207155628",
+		"acceptTime": "昨天 10:08",
+		"statusName": "已维修",
+		"roomName": "培训D#508",
+		"pictureCount": 0
+	}],
+	"success": true
+}
+
+
+
+
+
+
